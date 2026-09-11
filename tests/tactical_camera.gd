@@ -31,6 +31,11 @@ func run() -> void:
 	event.position = center+Vector2(100,0)
 	root.push_input(event,true)
 	check(rig.cursor_position == event.position,"aim follows viewport input event coordinates")
+	check(rig.aim_offset().x > 0 and rig.aim_offset().length() <= 3.0,"camera anticipates aim with bounded displacement")
+	var saved_cursor := rig.cursor_position
+	rig.cursor_position = center
+	check(rig.aim_offset().is_zero_approx(),"centered cursor has no camera displacement")
+	rig.cursor_position = saved_cursor
 	var middle := rig.ground_at(center)
 	check(rig.ground_at(center+Vector2(100,0)).x > middle.x,"cursor to right aims farther right")
 	check(rig.ground_at(center-Vector2(0,100)).z < middle.z,"cursor upward aims farther into arena")
@@ -42,16 +47,18 @@ func run() -> void:
 	check(rig.aim_at(screen).position.is_equal_approx(enemy.global_position+Vector3.UP*1.2),"ranged aim targets enemy torso")
 	var empty := rig.aim_at(rig.camera.unproject_position(Vector3(-3,0,2)))
 	check(is_equal_approx(empty.position.y,p.global_position.y+1.2),"empty ground aim keeps projectiles above floor")
+	var empty_screen := rig.camera.unproject_position(Vector3(-3,0,2))
+	check(rig.camera.unproject_position(empty.position).distance_to(empty_screen) < .01,"ranged aim projects exactly onto the cursor")
 	p.position.x = 6
 	rig._process(1.0/60)
-	check(rig.position.x > 0 and rig.position.x < 6,"camera follows without snapping")
+	check(rig.position.x > 0 and rig.position.x < rig.follow_target().x,"camera follows without snapping")
 	var one_step := rig.position
 	rig.position = Vector3.ZERO
 	rig._process(1.0/120)
 	rig._process(1.0/120)
 	check(rig.position.is_equal_approx(one_step),"follow smoothing independent of render frame rate for fixed target")
 	for i in 120: rig._process(1.0/60)
-	check(rig.position.distance_to(p.position) < .001,"camera settles without drift")
+	check(rig.position.distance_to(rig.follow_target()) < .001,"camera settles without drift")
 	game.hud.pause_game()
 	check(Input.mouse_mode == Input.MOUSE_MODE_VISIBLE,"pause restores system pointer")
 	game.hud.resume_game()

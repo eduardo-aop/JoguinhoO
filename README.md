@@ -5,9 +5,9 @@ MVP local 3D de arena, com um jogador e cinco bots. Guerreiro melee e mago range
 ## Base atual: câmera tática
 
 - Visão ortográfica inclinada em 60°, com campo de visão ajustável entre 16 e 30 unidades.
-- Câmera acompanha suavemente e limita o enquadramento às bordas da arena.
+- Câmera acompanha suavemente, antecipa até 3 metros na direção da mira e limita o enquadramento às bordas da arena.
 - WASD relativo à tela, independente da direção de ataque. O mouse move um cursor livre e o personagem se orienta para ele.
-- Mira sobre inimigos aponta ao torso; sobre o chão, mantém os disparos na altura do corpo. Habilidades de área seguem o ponto indicado no chão.
+- Mira sobre inimigos aponta ao torso; fora dos inimigos, projeta a mira na altura do disparo para que a trajetória passe pelo cursor. Habilidades de área seguem o ponto indicado no chão.
 - Ajustes de resposta da câmera, enquadramento e volume persistidos em preferências próprias da V6.
 - Um ataque por clique, dois kits de habilidades, bots, runas e rodadas de eliminação.
 
@@ -86,7 +86,7 @@ Vence quem eliminar os três rivais. Se as duas equipes forem eliminadas na mesm
 
 ## Validação
 
-204 verificações automáticas aprovadas em 11 scripts: combate, controle, câmera, animação, efeitos, bots, telemetria, investida e colisões. Inclui duas partidas completas de seis bots. Os testes de câmera em terceira pessoa foram substituídos por verificações da câmera tática; os resultados históricos da V5 estão em `docs/historico-v5/`.
+207 verificações automáticas aprovadas em 11 scripts: combate, controle, câmera, animação, efeitos, bots, telemetria, investida e colisões. Inclui duas partidas completas de seis bots. Os testes de câmera em terceira pessoa foram substituídos por verificações da câmera tática; os resultados históricos da V5 estão em `docs/historico-v5/`.
 
 Na janela nativa, verificados enquadramento, seleção, entrada na rodada, cursor sem captura e um ataque apontando para a direita com câmera imóvel. Movimento sustentado foi verificado via InputMap, sem teste de tecla física mantida pressionada pela ferramenta.
 
@@ -96,7 +96,7 @@ Após importar o projeto no editor:
 python3 tools/validate.py --godot /caminho/para/Godot --output /caminho/para/logs
 ```
 
-Resultados em `docs/validacao-v6/report.json`. Os avisos do ambiente restrito sobre logs locais e certificados do macOS são separados dos erros de script. Capturas em `tests/preview.tscn` são cenários montados de inspeção visual.
+Resultados atuais em `docs/validacao-mouse/report.json`. Os avisos do ambiente restrito sobre logs locais e certificados do macOS são separados dos erros de script. Capturas em `tests/preview.tscn` são cenários montados de inspeção visual.
 
 Veja `docs/GUIA-DE-TESTE.md` para avaliar a sensação dos controles e `docs/ARTE-E-FONTES.md` para reconstruir os assets.
 

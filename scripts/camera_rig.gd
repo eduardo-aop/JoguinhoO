@@ -30,8 +30,17 @@ func snap_to_actor() -> void:
 	if is_instance_valid(actor):
 		global_position = follow_target()
 
+func aim_offset() -> Vector3:
+	if not actor is RiftFighter or not actor.human or not actor.alive or not actor.arena.active:
+		return Vector3.ZERO
+	# Screen-relative displacement avoids a feedback loop as the camera moves.
+	var center := get_viewport().get_visible_rect().size*.5
+	var offset := ground_at(cursor_position)-ground_at(center)
+	offset.y = 0
+	return (offset*.18).limit_length(3.0)
+
 func follow_target() -> Vector3:
-	var target := actor.global_position
+	var target := actor.global_position + aim_offset()
 	# Keep the view on the arena at map edges, even at different aspect ratios.
 	var viewport_size := get_viewport().get_visible_rect().size
 	var upper := ground_at(Vector2.ZERO)-global_position
@@ -80,7 +89,13 @@ func aim_at(cursor: Vector2, max_distance: float = 100.0) -> Dictionary:
 	if not hit.is_empty() and hit.collider is RiftFighter:
 		hit.position = hit.collider.global_position + Vector3.UP*1.2
 		return hit
-	# Ground cursor determines horizontal aim; projectiles stay at torso height.
+	# Ranged shots intersect the cursor ray at launch height, so the visible
+	# trajectory passes through the marker instead of above it.
 	var point := ground_at(cursor)
-	point.y = actor.global_position.y+1.2
+	var height := actor.global_position.y+1.2
+	if actor is RiftFighter and actor.hero == "mage":
+		var at_height = Plane(Vector3.UP,height).intersects_ray(origin,camera.project_ray_normal(cursor))
+		if at_height != null:
+			point = at_height
+	point.y = height
 	return {"position":point,"collider":null}
