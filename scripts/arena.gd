@@ -14,6 +14,7 @@ var rig: ThirdPersonRig
 var spectator: RiftFighter
 var hud: RiftHUD
 var overview: Camera3D
+var practice_mode := false
 var active := false
 var elapsed := 0.0
 var countdown := -1.0
@@ -147,8 +148,9 @@ func clear_round() -> void:
 		marker.scale = Vector3.ONE
 	win_queued = false
 
-func start_round(hero_choice: String = "warrior", skip_countdown: bool = false) -> void:
+func start_round(hero_choice: String = "warrior", skip_countdown: bool = false, practice: bool = false) -> void:
 	clear_round()
+	practice_mode = practice
 	selected_hero = hero_choice
 	round_number += 1
 	elapsed = 0
@@ -168,6 +170,14 @@ func start_round(hero_choice: String = "warrior", skip_countdown: bool = false) 
 			fighters.append(f)
 			if f.human:
 				player = f
+	if practice_mode:
+		player.position = Vector3(0,.01,6)
+		for i in fighters.size():
+			var f := fighters[i]
+			if not f.human:
+				f.set_physics_process(false)
+				f.position = Vector3((i-4)*4,.01,-2) if f.team == 1 else Vector3(-15,.01,(i-1)*4)
+				f.rotation.y = PI
 	rig = ThirdPersonRig.new()
 	rig.settings = settings
 	rig.actor = player
@@ -191,10 +201,11 @@ func _physics_process(dt: float) -> void:
 		spawn_runes()
 		next_runes += RiftRules.RUNE_INTERVAL
 	update_rune_warning()
-	update_zone(dt)
+	if not practice_mode:
+		update_zone(dt)
 	if is_instance_valid(rig) and is_instance_valid(rig.actor):
 		rig.actor.model.visible = rig.model_visible
-	if elapsed >= RiftRules.ROUND_LIMIT:
+	if not practice_mode and elapsed >= RiftRules.ROUND_LIMIT:
 		adjudicate()
 
 func update_rune_warning() -> void:

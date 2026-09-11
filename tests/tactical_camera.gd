@@ -44,7 +44,7 @@ func run() -> void:
 	await frames(3)
 	var screen := rig.camera.unproject_position(enemy.global_position+Vector3.UP*1.2)
 	check(rig.aim_at(screen).collider == enemy,"cursor selects enemy body")
-	check(rig.aim_at(screen).position.is_equal_approx(enemy.global_position+Vector3.UP*1.2),"ranged aim targets enemy torso")
+	check(rig.camera.unproject_position(rig.aim_at(screen+Vector2(3,0)).position).distance_to(screen+Vector2(3,0)) < .01,"hovering an enemy does not pull aim away from cursor")
 	var empty := rig.aim_at(rig.camera.unproject_position(Vector3(-3,0,2)))
 	check(is_equal_approx(empty.position.y,p.global_position.y+1.2),"empty ground aim keeps projectiles above floor")
 	var empty_screen := rig.camera.unproject_position(Vector3(-3,0,2))

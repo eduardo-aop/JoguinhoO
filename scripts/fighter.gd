@@ -137,6 +137,10 @@ func _unhandled_input(event: InputEvent) -> void:
 		elif event.button_index == MOUSE_BUTTON_RIGHT:
 			cancel_prepare()
 	if event is InputEventKey and not event.echo:
+		if event.physical_keycode == KEY_SPACE and event.pressed:
+			refresh_cursor_aim()
+			cast(0 if hero == "warrior" else 1)
+			return
 		var slot := [KEY_Q,KEY_E,KEY_R,KEY_F].find(event.physical_keycode)
 		if slot >= 0:
 			refresh_cursor_aim()
@@ -230,6 +234,8 @@ func _physics_process(dt: float) -> void:
 		velocity = dash_direction*23*dash_fraction
 	else:
 		var acceleration: float = arena.settings.stopping_rate if move_axis_world.length() < .1 else arena.settings.acceleration_rate
+		if Vector3(velocity.x,0,velocity.z).dot(move_axis_world) < 0:
+			acceleration = maxf(acceleration,100.0)
 		var horizontal := Vector2(velocity.x,velocity.z)
 		var target_velocity := Vector2(move_axis_world.x,move_axis_world.z)*speed
 		horizontal = horizontal.move_toward(target_velocity,acceleration*dt)
@@ -372,6 +378,8 @@ func update_indicator() -> void:
 	movement_preview_blocked = false
 	if preparing < 0:
 		aim_indicator.hide()
+		if human:
+			show_basic_aim()
 		return
 	aim_indicator.show()
 	aim_indicator.position = Vector3(0,.05,0)
@@ -416,6 +424,24 @@ func update_indicator() -> void:
 		aim_indicator.scale = Vector3(2.6,1,2.6)
 		show_path_preview(global_position,Vector3(point.x,global_position.y,point.z),color)
 	aim_indicator.material_override.albedo_color = color
+
+func show_basic_aim() -> void:
+	var reach: float = stats.range
+	var color := Color("ff946d") if aim_obstructed else Color("8be8df")
+	if hero == "warrior":
+		show_path_preview(global_position,global_position+forward_flat()*reach,color)
+		return
+	var origin := global_position+Vector3.UP*1.2
+	var point := origin+(aim_point-origin).normalized()*reach
+	var excluded: Array[RID] = []
+	for ally in arena.fighters:
+		if ally.team == team: excluded.append(ally.get_rid())
+	var hit := get_world_3d().direct_space_state.intersect_ray(PhysicsRayQueryParameters3D.create(origin,point,3,excluded))
+	if not hit.is_empty(): point = hit.position
+	show_path_preview(origin,point,color)
+	# Projectiles and this guide share the same launch plane.
+	path_indicator.global_position.y = origin.y
+	path_indicator.material_override.albedo_color.a = .22
 
 func show_path_preview(from: Vector3,to: Vector3,color: Color) -> void:
 	from.y = .07
@@ -464,6 +490,12 @@ func take_damage(amount: float, source: Node3D, origin: Vector3, environmental: 
 	if not environmental:
 		if source != null and source.human:
 			arena.hud.hit_confirm(blocked)
+	if hp <= 0 and arena.practice_mode and not human:
+		hp = max_hp
+		arena.hud.notify("ALVO RESTAURADO",.6)
+	if arena.practice_mode and not human:
+		hp_bar.scale.x = maxf(.001,hp/max_hp)
+		caption.text = "ALVO · %d" % ceili(hp)
 	if hp <= 0:
 		if not environmental and source is RiftFighter:
 			source.eliminations += 1

@@ -1,0 +1,34 @@
+ERROR: Failed to open 'user://logs/godot2026-09-11T10.04.01.log'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Failed to open log file for writing: user://logs/godot.log
+   at: rotate_file (core/io/logger.cpp:169)
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS practice starts immediately warrior
+PASS practice opponents stay still warrior
+PASS practice dummy displays damage warrior
+PASS practice target restores without scoring an elimination warrior
+PASS practice has no time limit or zone warrior
+PASS idle player has visible attack range guide warrior
+PASS movement reaches speed within 100 ms warrior
+PASS direction reversal responds within 134 ms warrior
+PASS space uses class mobility warrior
+PASS space respects mobility cooldown warrior
+PASS pause exposes mode switch warrior
+PASS mode switch restores full selection warrior
+PASS practice starts immediately mage
+PASS practice opponents stay still mage
+PASS practice dummy displays damage mage
+PASS practice target restores without scoring an elimination mage
+PASS practice has no time limit or zone mage
+PASS idle player has visible attack range guide mage
+PASS movement reaches speed within 100 ms mage
+PASS direction reversal responds within 134 ms mage
+PASS space uses class mobility mage
+PASS space respects mobility cooldown mage
+PASS pause exposes mode switch mage
+PASS mode switch restores full selection mage
+PASS regular arena restores bots after practice
+BRAWLER_COMPLETE checks=25 failures=0

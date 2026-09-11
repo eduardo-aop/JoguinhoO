@@ -12,6 +12,8 @@ var hero_details: HBoxContainer
 var combat_panel: PanelContainer
 var choice_row: HBoxContainer
 var launch: Button
+var selection_button: Button
+var practice_button: Button
 var resume_button: Button
 var top: Label
 var info: Label
@@ -245,12 +247,24 @@ func build_menu() -> void:
 	launch.custom_minimum_size.y = 48
 	launch.pressed.connect(func(): arena.start_round(arena.selected_hero))
 	list.add_child(launch)
+	practice_button = Button.new()
+	practice_button.text = "TREINO LIVRE · ALVOS IMÓVEIS"
+	practice_button.custom_minimum_size.y = 38
+	practice_button.pressed.connect(func(): arena.start_round(arena.selected_hero,true,true))
+	list.add_child(practice_button)
 	resume_button = Button.new()
 	resume_button.text = "CONTINUAR"
 	resume_button.custom_minimum_size.y = 42
 	resume_button.pressed.connect(resume_game)
 	list.add_child(resume_button)
-	list.add_child(label("Clique: um ataque   ·   Guarda e Cura: ativação imediata\nQ/E/R/F direcionados: segurar e soltar   ·   Tab: trocar aliado ao observar",13,Color("a9bfb0")))
+	selection_button = Button.new()
+	selection_button.text = "TROCAR PERSONAGEM / MODO"
+	selection_button.pressed.connect(func():
+		arena.clear_round()
+		arena.overview.current = true
+		show_selection())
+	list.add_child(selection_button)
+	list.add_child(label("Clique: um ataque   ·   Espaço: mobilidade   ·   Guarda/Cura imediatas\nQ/E/R/F direcionados: segurar e soltar   ·   Tab: trocar aliado ao observar",13,Color("a9bfb0")))
 
 func update_choice() -> void:
 	hero_preview.show_hero(arena.selected_hero)
@@ -260,6 +274,15 @@ func update_choice() -> void:
 		choice_label.text = "MAGO  ·  200 de vida  ·  Distância e controle\nQ Orbe explosivo    E Passo arcano    R Campo glacial\nMantenha distância e controle áreas com magia."
 
 func show_selection() -> void:
+	title.text = "Escolha seu personagem"
+	description.text = "Arena 3×3 com bots ou treino livre com alvos.\nWASD move · mouse mira · Espaço usa mobilidade."
+	choice_row.show()
+	choice_label.show()
+	hero_details.show()
+	launch.show()
+	launch.text = "ENTRAR NA ARENA"
+	practice_button.show()
+	selection_button.hide()
 	overlay.show()
 	resume_button.hide()
 	update_choice()
@@ -286,6 +309,8 @@ func pause_game() -> void:
 	choice_label.hide()
 	hero_details.hide()
 	launch.hide()
+	practice_button.hide()
+	selection_button.show()
 	resume_button.show()
 	overlay.show()
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
@@ -304,6 +329,8 @@ func show_result(reason: String) -> void:
 	hero_details.show()
 	launch.show()
 	launch.text = "PRÓXIMA RODADA"
+	practice_button.show()
+	selection_button.hide()
 	resume_button.hide()
 	update_choice()
 	overlay.show()
@@ -369,7 +396,7 @@ func _process(dt: float) -> void:
 	notification_time = maxf(0,notification_time-dt)
 	if not f.alive:
 		info.text = "ELIMINADO · OBSERVANDO ALIADO · TAB PARA TROCAR"
-	elif arena.elapsed >= RiftRules.ZONE_START and not arena.inside_zone(f.global_position):
+	elif not arena.practice_mode and arena.elapsed >= RiftRules.ZONE_START and not arena.inside_zone(f.global_position):
 		info.text = "FORA DA ÁREA SEGURA · VOLTE AO CENTRO!"
 	elif f.preparing >= 0 and f.movement_preview_blocked:
 		info.text = "TRAJETO BLOQUEADO · MUDE A DIREÇÃO OU CANCELE"
@@ -379,6 +406,8 @@ func _process(dt: float) -> void:
 		info.text = "COBERTURA BLOQUEIA O ATAQUE · MUDE DE POSIÇÃO"
 	elif notification_time > 0:
 		info.text = toast_message
+	elif arena.practice_mode:
+		info.text = "TREINO · ESPAÇO: MOBILIDADE · ALVOS RESTAURAM VIDA · ESC: MENU"
 	elif arena.elapsed >= RiftRules.ZONE_START:
 		info.text = "ZONA DE PERIGO · FIQUE NA ÁREA SEGURA" if arena.inside_zone(f.global_position) else "FORA DA ÁREA SEGURA · VOLTE AO CENTRO!"
 	elif arena.elapsed >= RiftRules.ZONE_START-10:

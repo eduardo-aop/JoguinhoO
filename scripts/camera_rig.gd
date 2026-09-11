@@ -86,9 +86,6 @@ func aim_at(cursor: Vector2, max_distance: float = 100.0) -> Dictionary:
 				excluded.append(ally.get_rid())
 	var query := PhysicsRayQueryParameters3D.create(origin,destination,1 | 2,excluded)
 	var hit := get_world_3d().direct_space_state.intersect_ray(query)
-	if not hit.is_empty() and hit.collider is RiftFighter:
-		hit.position = hit.collider.global_position + Vector3.UP*1.2
-		return hit
 	# Ranged shots intersect the cursor ray at launch height, so the visible
 	# trajectory passes through the marker instead of above it.
 	var point := ground_at(cursor)
@@ -98,4 +95,4 @@ func aim_at(cursor: Vector2, max_distance: float = 100.0) -> Dictionary:
 		if at_height != null:
 			point = at_height
 	point.y = height
-	return {"position":point,"collider":null}
+	return {"position":point,"collider":hit.get("collider")}

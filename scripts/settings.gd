@@ -12,8 +12,8 @@ signal effects_volume_changed(value: float)
 		if not is_finite(value): return
 		effects_volume = clampf(value,0,1)
 		effects_volume_changed.emit(effects_volume)
-@export var acceleration_rate: float = 34.0
-@export var stopping_rate: float = 44.0
+@export var acceleration_rate: float = 70.0
+@export var stopping_rate: float = 90.0
 @export var input_buffer_window: float = 0.12
 
 const PREFERENCES_PATH := "user://tactical-preferences.cfg"
