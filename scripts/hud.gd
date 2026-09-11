@@ -157,7 +157,7 @@ func _ready() -> void:
 		recharge.add_theme_stylebox_override("fill",charge_style)
 		content.add_child(recharge)
 		skill_bars.append(recharge)
-	rows.add_child(label("WASD mover   ·   Mouse mirar   ·   Segure Q/E/R/F para preparar, solte para usar   ·   Direito cancela   ·   Esc pausa",13,Color("aec0b5")))
+	rows.add_child(label("WASD mover   ·   Mouse mirar   ·   Q/E/R/F: usar   ·   Shift + habilidade: prévia   ·   Direito cancela   ·   Esc pausa",13,Color("aec0b5")))
 	reticle = Control.new()
 	root.add_child(reticle)
 	reticle.set_anchors_and_offsets_preset(Control.PRESET_TOP_LEFT)
@@ -264,7 +264,7 @@ func build_menu() -> void:
 		arena.overview.current = true
 		show_selection())
 	list.add_child(selection_button)
-	list.add_child(label("Clique: um ataque   ·   Espaço: mobilidade   ·   Guarda/Cura imediatas\nQ/E/R/F direcionados: segurar e soltar   ·   Tab: trocar aliado ao observar",13,Color("a9bfb0")))
+	list.add_child(label("Clique: um ataque   ·   Espaço: mobilidade   ·   Q/E/R/F: ao pressionar\nShift + habilidade: prévia sem usar   ·   Tab: trocar aliado ao observar",13,Color("a9bfb0")))
 
 func update_choice() -> void:
 	hero_preview.show_hero(arena.selected_hero)
@@ -401,7 +401,7 @@ func _process(dt: float) -> void:
 	elif f.preparing >= 0 and f.movement_preview_blocked:
 		info.text = "TRAJETO BLOQUEADO · MUDE A DIREÇÃO OU CANCELE"
 	elif f.preparing >= 0:
-		info.text = "PREPARANDO %s · SOLTE PARA USAR · DIREITO CANCELA" % (f.stats.skills[f.preparing] if f.preparing < 3 else RiftRules.ACTIVES[f.active_rune])
+		info.text = "PRÉVIA %s · SOLTAR CANCELA · USE SEM SHIFT PARA ATIVAR" % (f.stats.skills[f.preparing] if f.preparing < 3 else RiftRules.ACTIVES[f.active_rune])
 	elif f.aim_obstructed:
 		info.text = "COBERTURA BLOQUEIA O ATAQUE · MUDE DE POSIÇÃO"
 	elif notification_time > 0:

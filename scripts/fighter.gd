@@ -141,17 +141,17 @@ func _unhandled_input(event: InputEvent) -> void:
 			refresh_cursor_aim()
 			cast(0 if hero == "warrior" else 1)
 			return
+		if event.physical_keycode == KEY_SHIFT and not event.pressed:
+			cancel_prepare()
 		var slot := [KEY_Q,KEY_E,KEY_R,KEY_F].find(event.physical_keycode)
 		if slot >= 0:
+			if not event.pressed:
+				if preparing == slot: cancel_prepare()
+				return
 			refresh_cursor_aim()
-			if event.pressed:
-				if hero == "warrior" and slot == 1:
-					cast(slot)
-				elif slot == 3 and active_rune == 0:
-					cast(slot)
-				else:
-					begin_prepare(slot)
-			elif preparing == slot:
+			if event.shift_pressed:
+				begin_prepare(slot)
+			else:
 				cancel_prepare()
 				cast(slot)
 
@@ -378,7 +378,7 @@ func update_indicator() -> void:
 	movement_preview_blocked = false
 	if preparing < 0:
 		aim_indicator.hide()
-		if human:
+		if human or basic_pending:
 			show_basic_aim()
 		return
 	aim_indicator.show()
@@ -428,6 +428,8 @@ func update_indicator() -> void:
 func show_basic_aim() -> void:
 	var reach: float = stats.range
 	var color := Color("ff946d") if aim_obstructed else Color("8be8df")
+	if not human:
+		color = RiftRules.team_color(team)
 	if hero == "warrior":
 		show_path_preview(global_position,global_position+forward_flat()*reach,color)
 		return
@@ -441,7 +443,7 @@ func show_basic_aim() -> void:
 	show_path_preview(origin,point,color)
 	# Projectiles and this guide share the same launch plane.
 	path_indicator.global_position.y = origin.y
-	path_indicator.material_override.albedo_color.a = .22
+	path_indicator.material_override.albedo_color.a = .22 if human else .65
 
 func show_path_preview(from: Vector3,to: Vector3,color: Color) -> void:
 	from.y = .07

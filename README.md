@@ -32,14 +32,15 @@ No menu, **TREINO LIVRE** permite praticar os dois kits contra alvos imóveis. E
 | W / S | Move para cima / baixo em relação à tela |
 | A / D | Move para esquerda / direita em relação à tela |
 | Clique esquerdo | Um ataque básico por clique; segurar não repete |
-| Q / E / R | Habilidades do personagem |
+| Q / E / R | Habilidades do personagem ao pressionar |
+| Shift + Q/E/R/F | Prévia sem ativar; solte para fechar |
 | F | Habilidade de runa, quando disponível |
 | Espaço | Investida do guerreiro / Passo arcano do mago; compartilha a recarga de Q / E |
 | Botão direito | Cancela a habilidade em preparação |
 | Esc | Pausa e ajustes de câmera; pressione novamente para continuar |
 | Tab, após morrer | Troca o aliado acompanhado |
 
-**Habilidades direcionadas:** segure a tecla para mostrar o indicador e solte para executar. **Guarda e Cura:** ativam imediatamente ao pressionar. Preparar uma habilidade impede o ataque básico; cancelar não consome recarga. A pausa cancela a preparação e congela a rodada. Perder o foco da janela pausa automaticamente.
+**Habilidades:** Q/E/R/F ativam ao pressionar a tecla. Segurar ou soltar não repete a ação. **Prévia opcional:** Shift + habilidade mostra o indicador sem gastar recarga; soltar fecha a prévia sem executar. Para usar, pressione a habilidade sem Shift. Botão direito cancela a prévia e o ataque básico na fila, sem desfazer habilidades já usadas. A prévia impede o ataque básico. A pausa cancela a preparação e congela a rodada. Perder o foco da janela pausa automaticamente.
 
 ## Guerreiro
 
@@ -89,7 +90,7 @@ Vence quem eliminar os três rivais. Se as duas equipes forem eliminadas na mesm
 
 ## Validação
 
-232 verificações automáticas aprovadas em 12 scripts: combate, controle, câmera, animação, efeitos, bots, telemetria, investida e colisões. Inclui duas partidas completas de seis bots. Os testes de câmera em terceira pessoa foram substituídos por verificações da câmera tática; os resultados históricos da V5 estão em `docs/historico-v5/`.
+259 verificações automáticas aprovadas em 13 scripts: combate, controle, câmera, animação, efeitos, bots, telemetria, investida e colisões. Inclui duas partidas completas de seis bots. Os testes de câmera em terceira pessoa foram substituídos por verificações da câmera tática; os resultados históricos da V5 estão em `docs/historico-v5/`.
 
 Na janela nativa, verificados enquadramento, seleção, entrada na rodada, cursor sem captura e um ataque apontando para a direita com câmera imóvel. Movimento sustentado foi verificado via InputMap, sem teste de tecla física mantida pressionada pela ferramenta.
 
@@ -99,7 +100,7 @@ Após importar o projeto no editor:
 python3 tools/validate.py --godot /caminho/para/Godot --output /caminho/para/logs
 ```
 
-Resultados atuais em `docs/validacao-brawler/report.json`. Os avisos do ambiente restrito sobre logs locais e certificados do macOS são separados dos erros de script. Capturas em `tests/preview.tscn` são cenários montados de inspeção visual.
+Resultados atuais em `docs/validacao-quickcast/report.json`. Os avisos do ambiente restrito sobre logs locais e certificados do macOS são separados dos erros de script. Capturas em `tests/preview.tscn` são cenários montados de inspeção visual.
 
 Veja `docs/GUIA-DE-TESTE.md` para avaliar a sensação dos controles e `docs/ARTE-E-FONTES.md` para reconstruir os assets.
 

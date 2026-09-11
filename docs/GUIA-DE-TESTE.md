@@ -7,7 +7,7 @@ Abra project.godot no Godot 4.7.2 e pressione F5.
 3. Alterne W e D, solte as teclas e observe a câmera se acomodar suavemente.
 4. Clique uma vez perto de um adversário: deve ocorrer apenas um ataque.
 5. Como mago, aponte para um inimigo e depois para o chão. Disparos devem seguir a direção escolhida sem mergulhar imediatamente no piso.
-6. Segure R e mova o cursor: o campo deve acompanhar a mira, limitado ao alcance e às coberturas. Solte para executar ou cancele com o botão direito.
+6. Segure Shift + R para inspecionar a área e solte para fechar a prévia. Pressione R sem Shift para executar imediatamente; soltar não deve executar outra vez. Teste áreas atrás de coberturas: a falha deve preservar a recarga.
 7. Em Esc, ajuste resposta e campo de visão. Retome e compare. Valores maiores de resposta acompanham mais rapidamente.
 8. Aproxime-se das bordas e observe o enquadramento. Após morrer, Tab alterna o aliado observado.
 

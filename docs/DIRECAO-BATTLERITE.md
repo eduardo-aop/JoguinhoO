@@ -15,8 +15,10 @@ Referências oficiais: [Steam](https://store.steampowered.com/app/504370/Battler
 
 232 verificações em 12 scripts, sem falhas; inclui duas partidas completas de bots. Novas verificações cobrem resposta do movimento em 100 ms, reversão em 134 ms, mobilidade/recarga, indicadores, vida dos alvos, treino e saída para arena normal. Inspeção gráfica de seleção, treino e pausa sem erros de script. Capturas são fixtures, não prova de conforto subjetivo durante uma sessão humana.
 
-## Decisão solicitada
+## Ativação aprovada e implementada
 
-Trocar habilidades direcionadas de segurar/soltar para ativar ao pressionar a tecla. A convenção anterior foi escolhida pelo usuário; por isso permanece até sua resposta. Recomendação: pressionar para acelerar o fluxo do combate. Ataque básico continua um por clique.
+O usuário aprovou ativar habilidades ao pressionar. Q/E/R/F agora executam uma vez no key-down, ignoram repetição automática e não executam no key-up. Shift + habilidade mantém a inspeção opcional de alcance, sem ativar ao soltar. Espaço continua como mobilidade. Um ataque básico por clique preservado.
 
-Após essa escolha, o próximo trabalho é ajustar preparação/cancelamento e animações de habilidades à convenção escolhida, seguido de sinais visuais de ataques adversários. Não alterar balanceamento de kits por analogia com personagens de Battlerite sem testes próprios.
+Ataques básicos dos bots exibem uma guia durante a preparação, removida ao terminar. Dano, recargas e duração da preparação permanecem iguais.
+
+259 verificações aprovadas em 13 scripts; resultados atuais em validacao-quickcast/. Inspeção gráfica instrumentada confirmou uma ativação do Campo glacial e recarga de 22 s, além de prévia e campo executado sem erros de script. Não substitui avaliação humana de conforto.

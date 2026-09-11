@@ -83,7 +83,7 @@ func run() -> void:
 	p.take_damage(40,ally,ally.position)
 	check(is_equal_approx(p.hp,192),"no friendly fire")
 	await setup()
-	check(p.begin_prepare(0) and p.cooldowns[0] == 0,"holding ability prepares without spending cooldown")
+	check(p.begin_prepare(0) and p.cooldowns[0] == 0,"ability preview does not spend cooldown")
 	check(not p.request_basic(),"basic attack blocked during preparation")
 	p.cancel_prepare()
 	check(p.preparing == -1 and p.cooldowns[0] == 0,"cancel preserves cooldown")

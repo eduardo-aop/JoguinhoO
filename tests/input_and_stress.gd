@@ -14,8 +14,9 @@ func check(ok: bool,description: String) -> void:
 func frames(count: int) -> void:
 	for i in count:
 		await physics_frame
-func key(code: Key,pressed: bool) -> void:
+func key(code: Key,pressed: bool, preview: bool = false) -> void:
 	var event := InputEventKey.new()
+	event.shift_pressed = preview
 	event.physical_keycode = code
 	event.pressed = pressed
 	Input.parse_input_event(event)
@@ -45,14 +46,14 @@ func run() -> void:
 	await frames(3)
 	key(KEY_Q,true)
 	await frames(3)
-	check(player.preparing == 0 and player.cooldowns[0] == 0,"Q key press only prepares")
+	check(player.preparing == -1 and player.cooldowns[0] == 7 and player.abilities_used[0] == 1,"Q press executes immediately")
 	key(KEY_Q,false)
 	await frames(3)
-	check(player.preparing == -1 and player.cooldowns[0] == 7,"Q release executes once")
+	check(player.preparing == -1 and player.abilities_used[0] == 1,"Q release does not repeat")
 	player.ability_lock = 0
-	key(KEY_R,true)
+	key(KEY_R,true,true)
 	await frames(3)
-	check(player.preparing == 2,"R prepares before cancellation")
+	check(player.preparing == 2,"Shift R previews before cancellation")
 	click(MOUSE_BUTTON_RIGHT,true)
 	await frames(3)
 	key(KEY_R,false)
