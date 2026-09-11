@@ -6,6 +6,8 @@ var actor: CharacterBody3D
 var camera: Camera3D
 var pitch: float = -.28
 var yaw := 0.0
+var return_yaw := 0.0
+var follow_orbit_enabled := true
 var model_visible := true
 var cursor_position := Vector2.ZERO
 var current_distance := 6.0
@@ -29,11 +31,32 @@ func _input(event: InputEvent) -> void:
 	if get_tree().paused: return
 	if event is InputEventMouseMotion or event is InputEventMouseButton:
 		cursor_position = event.position.clamp(Vector2.ZERO,get_viewport().get_visible_rect().size)
+		if event is InputEventMouseMotion and event.screen_relative.length_squared() > .01:
+			set_return_direction()
+
+func set_return_direction() -> void:
+	if not is_instance_valid(actor): return
+	var point: Vector3 = aim_query().position
+	var offset := point-actor.global_position
+	if Vector2(offset.x,offset.z).length() < .25: return
+	var heading := atan2(-offset.x,-offset.z)
+	# Sample user intent once. Chasing actor yaw each frame would endlessly
+	# rotate both camera and aim with a stationary off-center cursor.
+	return_yaw = yaw+clampf(angle_difference(yaw,heading),-deg_to_rad(25),deg_to_rad(25))
+
+func update_orbit(dt: float) -> void:
+	if not follow_orbit_enabled: return
+	if actor is RiftFighter and not actor.human:
+		return_yaw = actor.rotation.y
+	var step := angle_difference(yaw,return_yaw)*(1.0-exp(-4.0*dt))
+	yaw = wrapf(yaw+clampf(step,-dt*deg_to_rad(70),dt*deg_to_rad(70)),-PI,PI)
+	rotation = Vector3(pitch,yaw,0)
 
 func look(delta: Vector2) -> void:
 	yaw = wrapf(yaw-delta.x*settings.mouse_sensitivity,-PI,PI)
 	pitch = clampf(pitch-delta.y*settings.mouse_sensitivity,-1.05,.45)
 	rotation = Vector3(pitch,yaw,0)
+	return_yaw = yaw
 	update_collision(0)
 
 func aim_toward(point: Vector3) -> void:
@@ -41,6 +64,7 @@ func aim_toward(point: Vector3) -> void:
 	yaw = atan2(-offset.x,-offset.z)
 	pitch = clampf(atan2(offset.y,Vector2(offset.x,offset.z).length()),-1.05,.45)
 	rotation = Vector3(pitch,yaw,0)
+	return_yaw = yaw
 	update_collision(0)
 
 func snap_to_actor() -> void:
@@ -48,6 +72,7 @@ func snap_to_actor() -> void:
 	global_position = follow_target()
 	rotation = Vector3(pitch,yaw,0)
 	cursor_position = get_viewport().get_visible_rect().size*.5
+	return_yaw = yaw
 	update_collision(0)
 
 func follow_target() -> Vector3:
@@ -55,6 +80,7 @@ func follow_target() -> Vector3:
 
 func _physics_process(dt: float) -> void:
 	if not is_instance_valid(actor): return
+	update_orbit(dt)
 	global_position = global_position.lerp(follow_target(),1.0-exp(-settings.camera_follow_speed*dt))
 	update_collision(dt)
 

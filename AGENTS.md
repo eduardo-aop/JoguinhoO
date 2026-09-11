@@ -4,7 +4,7 @@ Este repositório é a pasta permanente do jogo. Continue as alterações aqui e
 
 ## Projeto
 
-Godot 4.7.2, GDScript, renderizador Compatibility. Cena principal: `scenes/arena.tscn`. Jogo local 3×3 com um jogador e cinco bots. Base atual: câmera em terceira pessoa acima/atrás do personagem, WASD relativo ao giro horizontal da câmera e cursor livre para mirar, sem giro automático da câmera.
+Godot 4.7.2, GDScript, renderizador Compatibility. Cena principal: `scenes/arena.tscn`. Jogo local 3×3 com um jogador e cinco bots. Base atual: câmera em terceira pessoa acima/atrás do personagem, WASD relativo ao giro horizontal da câmera e cursor livre para mirar, com retorno suave e limitado da câmera em direção às costas, sem capturar ou recentralizar o cursor.
 
 ## Verificação
 

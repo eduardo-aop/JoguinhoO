@@ -2,7 +2,7 @@
 
 Abra project.godot no Godot 4.7.2 e pressione F5. Entre no treino com guerreiro ou mago.
 
-1. Mova o mouse: o cursor deve percorrer a tela, sem girar a câmera. O personagem deve se orientar para o ponto apontado.
+1. Mova o mouse: o cursor deve percorrer a tela e orientar o personagem. A câmera acompanha com um pequeno atraso e se acomoda suavemente. Pare o cursor fora do centro: a câmera deve parar de girar, sem prender ou recentralizar o mouse.
 2. Use WASD: W avança no sentido horizontal da câmera, A/D andam de lado.
 3. Aproxime-se das coberturas: deve recolher antes de atravessar obstáculos e retornar gradualmente.
 4. Clique uma vez: execute um ataque. Q/E/R/F ativam ao pressionar. Espaço usa a mobilidade da classe.

@@ -18,6 +18,8 @@ func _ready() -> void:
 	var original_rotation := game.rig.rotation
 	get_viewport().push_input(motion,true)
 	print("FREE_CURSOR_NATIVE visible=",Input.mouse_mode == Input.MOUSE_MODE_VISIBLE," camera_stable=",game.rig.rotation == original_rotation," cursor=",game.rig.cursor_position)
+	await get_tree().create_timer(1.2).timeout
+	print("CAMERA_RETURN_NATIVE before=",original_rotation.y," after=",game.rig.yaw," free=",Input.mouse_mode == Input.MOUSE_MODE_VISIBLE)
 	await capture("res://work/brawler-training.png")
 	var preview := InputEventKey.new()
 	preview.physical_keycode = KEY_R

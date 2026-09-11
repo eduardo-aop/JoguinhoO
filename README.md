@@ -5,7 +5,7 @@ MVP local 3D de arena, com um jogador e cinco bots. Guerreiro melee e mago range
 ## Base atual: terceira pessoa
 
 - Câmera em perspectiva, acima e atrás do personagem: distância inicial de 6,5 m e ponto de acompanhamento a 2,65 m do chão do personagem.
-- Mouse livre aponta os ataques e habilidades; mover o cursor não gira a câmera. WASD segue a direção horizontal da câmera, com deslocamento lateral independente da mira.
+- Mouse livre aponta os ataques e habilidades. A câmera faz pequenas correções suaves em direção às costas do personagem e se acomoda após o movimento do mouse. WASD segue a direção horizontal da câmera, com deslocamento lateral independente da mira.
 - Esfera de colisão evita atravessar paredes e chão; aproximação imediata diante de obstáculos e recuperação gradual. O modelo desaparece quando a câmera está perto demais.
 - Mira sem atração automática aos inimigos. Projéteis seguem o ponto apontado pelo cursor; coberturas entre o corpo e o alvo continuam bloqueando o disparo.
 - Habilidades de área projetam o cursor no chão; mirar no céu não consome recarga.
@@ -30,7 +30,7 @@ No menu, **TREINO LIVRE** permite praticar os dois kits. Ative **Alvos em movime
 
 | Entrada | Ação |
 |---|---|
-| Mouse | Cursor livre direciona ataques e habilidades, sem girar a câmera |
+| Mouse | Cursor livre direciona ataques; câmera acompanha suavemente |
 | W / S | Avança / recua na direção horizontal da câmera |
 | A / D | Move para esquerda / direita em relação à tela |
 | Clique esquerdo | Um ataque básico por clique; segurar não repete |
@@ -92,7 +92,7 @@ Vence quem eliminar os três rivais. Se as duas equipes forem eliminadas na mesm
 
 ## Validação
 
-272 verificações automáticas aprovadas em 14 scripts: combate, controle, câmera, animação, efeitos, bots, telemetria, investida e colisões. Inclui duas partidas completas de seis bots. As verificações da câmera tática foram substituídas pelas da nova câmera; versões anteriores permanecem no histórico Git.
+280 verificações automáticas aprovadas em 15 scripts: combate, controle, câmera, animação, efeitos, bots, telemetria, investida e colisões. Inclui duas partidas completas de seis bots. As verificações da câmera tática foram substituídas pelas da nova câmera; versões anteriores permanecem no histórico Git.
 
 Inspeção gráfica de enquadramento, seleção, treino, prévia e execução do Campo glacial. Interface verificada em 1280×720 e 1024×768. Movimento sustentado foi verificado via InputMap, sem teste de tecla física mantida pressionada pela ferramenta.
 
@@ -102,7 +102,7 @@ Após importar o projeto no editor:
 python3 tools/validate.py --godot /caminho/para/Godot --output /caminho/para/logs
 ```
 
-Resultados atuais em `docs/validacao-cursor-livre/report.json`. Os avisos do ambiente restrito sobre logs locais e certificados do macOS são separados dos erros de script. Capturas em `tests/preview.tscn` são cenários montados de inspeção visual.
+Resultados atuais em `docs/validacao-retorno-camera/report.json`. Os avisos do ambiente restrito sobre logs locais e certificados do macOS são separados dos erros de script. Capturas em `tests/preview.tscn` são cenários montados de inspeção visual.
 
 Veja `docs/GUIA-DE-TESTE.md` para avaliar a sensação dos controles e `docs/ARTE-E-FONTES.md` para reconstruir os assets.
 

@@ -15,6 +15,7 @@ func run() -> void:
 	for f in game.fighters: f.set_physics_process(false)
 	var rig := game.rig
 	rig.set_physics_process(false)
+	rig.follow_orbit_enabled = false
 	check(rig.current_distance <= game.settings.camera_distance,"camera validates collision on spawn")
 	var p := game.player
 	p.position = Vector3(0,.01,0)
