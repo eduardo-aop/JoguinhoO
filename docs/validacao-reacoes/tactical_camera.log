@@ -1,0 +1,31 @@
+ERROR: Failed to open 'user://logs/godot2026-09-11T11.43.07.log'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Failed to open log file for writing: user://logs/godot.log
+   at: rotate_file (core/io/logger.cpp:169)
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS elevated orthographic view
+PASS character turning does not rotate camera
+PASS W moves toward top of screen regardless of facing
+PASS D strafes toward screen right
+PASS diagonal movement capped
+PASS aim follows viewport input event coordinates
+PASS camera anticipates aim with bounded displacement
+PASS centered cursor has no camera displacement
+PASS cursor to right aims farther right
+PASS cursor upward aims farther into arena
+PASS cursor selects enemy body
+PASS hovering an enemy does not pull aim away from cursor
+PASS empty ground aim keeps projectiles above floor
+PASS ranged aim projects exactly onto the cursor
+PASS camera follows without snapping
+PASS follow smoothing independent of render frame rate for fixed target
+PASS camera settles without drift
+PASS pause restores system pointer
+PASS save tactical preferences
+PASS restore field of view and follow speed
+PASS spectator keeps independent camera and snaps to ally
+PASS camera stays within arena at left edge
+TACTICAL_CAMERA_COMPLETE checks=22 failures=0

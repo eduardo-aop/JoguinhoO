@@ -1,5 +1,6 @@
 extends Node
 
+@export var rounds_to_run := 4
 var arena: RiftArena
 var reports: Array[Dictionary] = []
 var samples: Array[float] = []
@@ -10,6 +11,7 @@ var maximum_effects := 0
 var maximum_voices := 0
 
 func _ready() -> void:
+	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path("res://work"))
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	arena = load("res://scenes/arena.tscn").instantiate()
 	add_child(arena)
@@ -59,11 +61,11 @@ func finish_sample() -> void:
 	reports.append(row)
 	completed += 1
 	var valid := reports.all(func(r): return r.cleanup_ok and r.peak_effects <= 48 and r.peak_playing_voices <= 18)
-	var report := {"complete":completed == 12,"rounds":completed,"wall_seconds":(Time.get_ticks_msec()-started)/1000.0,"checks_passed":valid,"note":"Real-time graphical bot-only sessions with spatial audio enabled at low volume. Frame timing includes pacing; focus pause is bypassed only by this diagnostic.","samples":reports}
-	var file := FileAccess.open("res://docs/SOAK-V5.json",FileAccess.WRITE)
+	var report := {"complete":completed == rounds_to_run,"rounds":completed,"wall_seconds":(Time.get_ticks_msec()-started)/1000.0,"checks_passed":valid,"note":"Real-time graphical bot-only sessions with spatial audio enabled at low volume. Frame timing includes pacing; focus pause is bypassed only by this diagnostic.","samples":reports}
+	var file := FileAccess.open("res://work/endurance.json",FileAccess.WRITE)
 	file.store_string(JSON.stringify(report,"  "))
 	print("SOAK_ROUND ",completed," cleanup=",row.cleanup_ok," nodes=",row.nodes_after_cleanup," memory=",row.static_memory_bytes)
-	if completed < 12:
+	if completed < rounds_to_run:
 		start_next()
 	else:
 		print("SOAK_COMPLETE rounds=",completed," passed=",valid)

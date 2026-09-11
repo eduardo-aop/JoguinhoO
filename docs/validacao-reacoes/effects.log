@@ -1,0 +1,27 @@
+ERROR: Failed to open 'user://logs/godot2026-09-11T11.43.16.log'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Failed to open log file for writing: user://logs/godot.log
+   at: rotate_file (core/io/logger.cpp:169)
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS damage does not overwrite active attack animation
+PASS damage feedback has a cooldown
+PASS continuous damage cannot repeatedly restart reaction
+PASS new attack interrupts previous hit reaction
+PASS guard keeps right arm available for attack
+PASS effect created slash
+PASS effect created heal
+PASS effect created teleport
+PASS effect created shock
+PASS effect created explosion
+PASS transient effects have bounded count
+PASS transient effects expire completely
+PASS frost field has perimeter markers
+PASS frost field and crystals expire together
+PASS moving actor enters locomotion animation
+PASS round end clears guard and attack overlays
+PASS survivor returns to idle after round ends
+PASS restart clears transient effects
+EFFECTS_COMPLETE checks=18 failures=0

@@ -137,9 +137,10 @@ func _unhandled_input(event: InputEvent) -> void:
 		elif event.button_index == MOUSE_BUTTON_RIGHT:
 			cancel_prepare()
 	if event is InputEventKey and not event.echo:
+		move_axis_world = arena.rig.movement_direction(Input.get_vector("move_left","move_right","move_forward","move_back"))
 		if event.physical_keycode == KEY_SPACE and event.pressed:
 			refresh_cursor_aim()
-			cast(0 if hero == "warrior" else 1)
+			player_cast(0 if hero == "warrior" else 1)
 			return
 		if event.physical_keycode == KEY_SHIFT and not event.pressed:
 			cancel_prepare()
@@ -153,7 +154,19 @@ func _unhandled_input(event: InputEvent) -> void:
 				begin_prepare(slot)
 			else:
 				cancel_prepare()
-				cast(slot)
+				player_cast(slot)
+
+func player_cast(slot: int) -> bool:
+	if basic_pending or ability_lock > 0:
+		arena.hud.notify("AÇÃO EM ANDAMENTO",.6)
+		return false
+	if slot < 3 and cooldowns[slot] > 0:
+		arena.hud.notify("%s · RECARGA %.1fs" % [stats.skills[slot],cooldowns[slot]],.6)
+		return false
+	if slot == 3 and active_rune < 0:
+		arena.hud.notify("SEM RUNA ATIVA · COLETE UMA RUNA",.8)
+		return false
+	return cast(slot)
 
 func can_act() -> bool:
 	return alive and arena.active and not get_tree().paused

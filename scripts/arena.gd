@@ -15,6 +15,7 @@ var spectator: RiftFighter
 var hud: RiftHUD
 var overview: Camera3D
 var practice_mode := false
+var moving_targets := false
 var active := false
 var elapsed := 0.0
 var countdown := -1.0
@@ -197,6 +198,8 @@ func _physics_process(dt: float) -> void:
 	if not active:
 		return
 	elapsed += dt
+	if practice_mode:
+		update_practice_targets()
 	if elapsed >= next_runes:
 		spawn_runes()
 		next_runes += RiftRules.RUNE_INTERVAL
@@ -207,6 +210,17 @@ func _physics_process(dt: float) -> void:
 		rig.actor.model.visible = rig.model_visible
 	if not practice_mode and elapsed >= RiftRules.ROUND_LIMIT:
 		adjudicate()
+
+func update_practice_targets() -> void:
+	for i in fighters.size():
+		var f := fighters[i]
+		if f.team != 1: continue
+		if moving_targets:
+			var phase := elapsed*1.8+(i-3)*1.5
+			f.position.x = (i-4)*4+sin(phase)*1.2
+			f.velocity = Vector3(cos(phase)*2.16,0,0)
+		else:
+			f.velocity = Vector3.ZERO
 
 func update_rune_warning() -> void:
 	for i in rune_markers.size():

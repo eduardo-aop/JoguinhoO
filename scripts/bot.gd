@@ -8,6 +8,9 @@ var target: Node3D
 var destination := Vector3.ZERO
 var side := 1.0
 var decision_offset := 0.0
+var threat_clock := 0.0
+var dodge_clock := 0.0
+var dodge_direction := Vector3.ZERO
 
 func _init(fighter: Node3D) -> void:
 	actor = fighter
@@ -92,6 +95,16 @@ func direction(dt: float) -> Vector3:
 					var tangent := Vector3(-route_direction.z,0,route_direction.x)
 					if safe_destination(actor.global_position+tangent*.9):
 						movement += tangent*1.1
+	threat_clock -= dt
+	dodge_clock = maxf(0,dodge_clock-dt)
+	if threat_clock <= 0:
+		threat_clock = .18+decision_offset*.2
+		var escape := hazard_escape()
+		if escape.length_squared() > .1:
+			dodge_direction = escape
+			dodge_clock = .25
+	if dodge_clock > 0 and safe_destination(actor.global_position+dodge_direction):
+		return dodge_direction
 	return movement.normalized()
 
 func choose_target() -> Node3D:
@@ -142,3 +155,34 @@ func choose_kite_position(enemy: Node3D) -> Vector3:
 			best_score = score
 			best = point
 	return best
+
+func hazard_escape() -> Vector3:
+	# Sample visible hazards on a reaction cadence, not every physics tick.
+	for hazard in actor.arena.effects.get_children():
+		if not (hazard is RiftField or hazard is RiftProjectile): continue
+		if not is_instance_valid(hazard.owner_fighter) or hazard.owner_fighter.team == actor.team: continue
+		var offset: Vector3 = actor.global_position-hazard.global_position
+		offset.y = 0
+		if hazard is RiftField:
+			if offset.length() < hazard.radius+.45:
+				var away := offset.normalized() if offset.length() > .1 else Vector3.RIGHT
+				return clear_escape(away)
+		elif offset.length() < 9 and actor.arena.line_clear(actor.global_position+Vector3.UP,hazard.global_position):
+			var travel: Vector3 = hazard.direction*hazard.speed
+			travel.y = 0
+			var relative := travel-Vector3(actor.velocity.x,0,actor.velocity.z)
+			if relative.length_squared() < .01: continue
+			var impact_time := offset.dot(relative)/relative.length_squared()
+			if impact_time < .08 or impact_time > .65 or impact_time*hazard.speed > hazard.remaining: continue
+			if (offset-relative*impact_time).length() > .85: continue
+			var lateral := Vector3(-travel.z,0,travel.x).normalized()*side
+			var escape := clear_escape(lateral)
+			if escape.length_squared() > .1: return escape
+	return Vector3.ZERO
+
+func clear_escape(escape_direction: Vector3) -> Vector3:
+	for candidate in [escape_direction,-escape_direction]:
+		var point: Vector3 = actor.global_position+candidate*1.8
+		if safe_destination(point) and actor.arena.line_clear(actor.global_position+Vector3.UP,point+Vector3.UP):
+			return candidate
+	return Vector3.ZERO

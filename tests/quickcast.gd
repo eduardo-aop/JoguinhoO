@@ -52,6 +52,12 @@ func run() -> void:
 	await physics_frame
 	key(game.player,KEY_R,true)
 	check(game.player.cooldowns[2] == 0 and game.player.abilities_used[2] == 0,"blocked ground quickcast preserves cooldown")
+	game.player.cooldowns[0] = 3
+	key(game.player,KEY_Q,true)
+	check(game.hud.toast_message.contains("RECARGA"),"unavailable skill explains cooldown")
+	game.player.active_rune = -1
+	key(game.player,KEY_F,true)
+	check(game.hud.toast_message.contains("SEM RUNA"),"empty rune slot explains why it cannot cast")
 	var opponent := game.fighters[5]
 	opponent.basic_pending = true
 	opponent.aim_point = game.player.position+Vector3.UP*1.2

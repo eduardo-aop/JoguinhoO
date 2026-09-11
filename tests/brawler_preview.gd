@@ -8,6 +8,8 @@ func _ready() -> void:
 	var game: RiftArena = load("res://scenes/arena.tscn").instantiate()
 	add_child(game)
 	await capture("res://work/brawler-menu.png")
+	game.moving_targets = true
+	game.hud.moving_targets_option.button_pressed = true
 	game.start_round("mage",true,true)
 	game.rig.cursor_position = game.rig.camera.unproject_position(Vector3(1,1.2,-2))
 	await capture("res://work/brawler-training.png")

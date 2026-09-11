@@ -12,6 +12,7 @@ var hero_details: HBoxContainer
 var combat_panel: PanelContainer
 var choice_row: HBoxContainer
 var launch: Button
+var moving_targets_option: CheckButton
 var selection_button: Button
 var practice_button: Button
 var resume_button: Button
@@ -248,10 +249,14 @@ func build_menu() -> void:
 	launch.pressed.connect(func(): arena.start_round(arena.selected_hero))
 	list.add_child(launch)
 	practice_button = Button.new()
-	practice_button.text = "TREINO LIVRE · ALVOS IMÓVEIS"
+	practice_button.text = "TREINO LIVRE"
 	practice_button.custom_minimum_size.y = 38
 	practice_button.pressed.connect(func(): arena.start_round(arena.selected_hero,true,true))
 	list.add_child(practice_button)
+	moving_targets_option = CheckButton.new()
+	moving_targets_option.text = "Alvos em movimento no treino"
+	moving_targets_option.toggled.connect(func(value: bool): arena.moving_targets = value)
+	list.add_child(moving_targets_option)
 	resume_button = Button.new()
 	resume_button.text = "CONTINUAR"
 	resume_button.custom_minimum_size.y = 42
@@ -282,6 +287,7 @@ func show_selection() -> void:
 	launch.show()
 	launch.text = "ENTRAR NA ARENA"
 	practice_button.show()
+	moving_targets_option.show()
 	selection_button.hide()
 	overlay.show()
 	resume_button.hide()
@@ -310,6 +316,7 @@ func pause_game() -> void:
 	hero_details.hide()
 	launch.hide()
 	practice_button.hide()
+	moving_targets_option.visible = arena.practice_mode
 	selection_button.show()
 	resume_button.show()
 	overlay.show()
@@ -330,6 +337,7 @@ func show_result(reason: String) -> void:
 	launch.show()
 	launch.text = "PRÓXIMA RODADA"
 	practice_button.show()
+	moving_targets_option.show()
 	selection_button.hide()
 	resume_button.hide()
 	update_choice()

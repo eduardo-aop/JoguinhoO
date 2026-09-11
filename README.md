@@ -10,8 +10,9 @@ MVP local 3D de arena, com um jogador e cinco bots. Guerreiro melee e mago range
 - Mira manual sem atração para o centro dos inimigos. A projeção na altura do disparo faz a trajetória passar pelo cursor. Habilidades de área seguem o ponto indicado no chão.
 - Ajustes de resposta da câmera, enquadramento e volume persistidos em preferências próprias da V6.
 - Um ataque por clique, dois kits de habilidades, bots, runas e rodadas de eliminação.
+- Bots reconhecem campos hostis e projéteis próximos em rota de colisão, tentando sair ou esquivar com uma cadência de reação de 180–230 ms.
 - Movimento com aceleração e frenagem mais responsivas, guia de alcance/linha de tiro e Espaço como atalho de mobilidade.
-- Treino livre com alvos imóveis que restauram a vida, sem zona nem limite de tempo.
+- Treino livre com alvos imóveis ou móveis que restauram a vida, sem zona nem limite de tempo.
 
 Projeto editável com modelos e fontes Blender. Testado no Godot 4.7.2 Compatibility; não inclui aplicativo standalone exportado. Battlerite é a referência de jogabilidade: WASD, mira manual e leitura de ataques para desviar. Arte, personagens e regras são próprios; não é uma reprodução exata.
 
@@ -22,7 +23,7 @@ Projeto editável com modelos e fontes Blender. Testado no Godot 4.7.2 Compatibi
 3. Escolha **GUERREIRO** ou **MAGO** e clique em **ENTRAR NA ARENA**.
 4. Após a contagem de três segundos, elimine os três adversários. Não há renascimento durante a rodada.
 
-No menu, **TREINO LIVRE** permite praticar os dois kits contra alvos imóveis. Em Esc, **TROCAR PERSONAGEM / MODO** retorna à seleção. Na tela de resultado, você pode trocar de personagem antes da próxima rodada. O placar permanece durante a sessão, sem gravação em disco.
+No menu, **TREINO LIVRE** permite praticar os dois kits. Ative **Alvos em movimento no treino** para treinar antecipação da mira; a opção também está disponível na pausa do treino. Em Esc, **TROCAR PERSONAGEM / MODO** retorna à seleção. Na tela de resultado, você pode trocar de personagem antes da próxima rodada. O placar permanece durante a sessão, sem gravação em disco.
 
 ## Controles
 
@@ -90,7 +91,7 @@ Vence quem eliminar os três rivais. Se as duas equipes forem eliminadas na mesm
 
 ## Validação
 
-259 verificações automáticas aprovadas em 13 scripts: combate, controle, câmera, animação, efeitos, bots, telemetria, investida e colisões. Inclui duas partidas completas de seis bots. Os testes de câmera em terceira pessoa foram substituídos por verificações da câmera tática; os resultados históricos da V5 estão em `docs/historico-v5/`.
+273 verificações automáticas aprovadas em 14 scripts: combate, controle, câmera, animação, efeitos, bots, telemetria, investida e colisões. Inclui duas partidas completas de seis bots. Os testes de câmera em terceira pessoa foram substituídos por verificações da câmera tática; os resultados históricos da V5 estão em `docs/historico-v5/`.
 
 Na janela nativa, verificados enquadramento, seleção, entrada na rodada, cursor sem captura e um ataque apontando para a direita com câmera imóvel. Movimento sustentado foi verificado via InputMap, sem teste de tecla física mantida pressionada pela ferramenta.
 
@@ -100,7 +101,7 @@ Após importar o projeto no editor:
 python3 tools/validate.py --godot /caminho/para/Godot --output /caminho/para/logs
 ```
 
-Resultados atuais em `docs/validacao-quickcast/report.json`. Os avisos do ambiente restrito sobre logs locais e certificados do macOS são separados dos erros de script. Capturas em `tests/preview.tscn` são cenários montados de inspeção visual.
+Resultados atuais em `docs/validacao-reacoes/report.json`. Os avisos do ambiente restrito sobre logs locais e certificados do macOS são separados dos erros de script. Capturas em `tests/preview.tscn` são cenários montados de inspeção visual.
 
 Veja `docs/GUIA-DE-TESTE.md` para avaliar a sensação dos controles e `docs/ARTE-E-FONTES.md` para reconstruir os assets.
 

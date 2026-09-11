@@ -12,6 +12,7 @@ func fits(control: Control) -> bool:
 	return get_viewport().get_visible_rect().encloses(control.get_global_rect())
 
 func _ready() -> void:
+	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path("res://work"))
 	var original_size := get_window().size
 	var valid := true
 	for dimensions in [Vector2i(1280,720),Vector2i(1024,768)]:
@@ -19,19 +20,19 @@ func _ready() -> void:
 		var arena: RiftArena = load("res://scenes/arena.tscn").instantiate()
 		add_child(arena)
 		await settle()
-		var menu_fits := fits(arena.hud.launch) and fits(arena.hud.hero_preview)
+		var menu_fits := fits(arena.hud.launch) and fits(arena.hud.hero_preview) and fits(arena.hud.practice_button) and fits(arena.hud.moving_targets_option)
 		valid = valid and menu_fits
-		await capture("res://../v5-menu-%dx%d.png" % [dimensions.x,dimensions.y])
+		await capture("res://work/layout-menu-%dx%d.png" % [dimensions.x,dimensions.y])
 		arena.selected_hero = "mage"
 		arena.hud.update_choice()
-		await capture("res://../v5-menu-mago-%dx%d.png" % [dimensions.x,dimensions.y])
+		await capture("res://work/layout-menu-mago-%dx%d.png" % [dimensions.x,dimensions.y])
 		arena.start_round("mage",true)
 		for fighter in arena.fighters: fighter.set_physics_process(false)
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		await settle()
 		var combat_fits := fits(arena.hud.combat_panel) and fits(arena.hud.minimap)
 		valid = valid and combat_fits
-		await capture("res://../v5-hud-%dx%d.png" % [dimensions.x,dimensions.y])
+		await capture("res://work/layout-hud-%dx%d.png" % [dimensions.x,dimensions.y])
 		print("LAYOUT ",dimensions," menu=",menu_fits," combat=",combat_fits)
 		arena.queue_free()
 		await settle()

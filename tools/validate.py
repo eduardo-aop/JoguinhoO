@@ -8,7 +8,7 @@ import re
 import subprocess
 import sys
 
-TESTS = ("quickcast", "brawler", "suite", "polish", "control", "tactical_camera", "input_and_stress", "attack_timing",
+TESTS = ("hazard_response", "quickcast", "brawler", "suite", "polish", "control", "tactical_camera", "input_and_stress", "attack_timing",
          "effects", "tactics", "telemetry", "dash_timing", "hitbox")
 
 
