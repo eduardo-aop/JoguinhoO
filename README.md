@@ -5,11 +5,11 @@ MVP local 3D de arena, com um jogador e cinco bots. Guerreiro melee e mago range
 ## Base atual: terceira pessoa
 
 - Câmera em perspectiva, acima e atrás do personagem: distância inicial de 6,5 m e ponto de acompanhamento a 2,65 m do chão do personagem.
-- Mouse capturado gira a câmera e orienta ataques pela mira central. WASD segue a direção horizontal da câmera, com deslocamento lateral independente da mira.
+- Mouse livre aponta os ataques e habilidades; mover o cursor não gira a câmera. WASD segue a direção horizontal da câmera, com deslocamento lateral independente da mira.
 - Esfera de colisão evita atravessar paredes e chão; aproximação imediata diante de obstáculos e recuperação gradual. O modelo desaparece quando a câmera está perto demais.
-- Mira sem atração automática aos inimigos. Projéteis seguem o ponto visto no centro; coberturas entre o corpo e o alvo continuam bloqueando o disparo.
-- Habilidades de área projetam a mira central no chão; mirar no céu não consome recarga.
-- Sensibilidade, distância de 3,5 a 8 m, suavidade e volume ajustáveis no menu, com preferências próprias da câmera em terceira pessoa.
+- Mira sem atração automática aos inimigos. Projéteis seguem o ponto apontado pelo cursor; coberturas entre o corpo e o alvo continuam bloqueando o disparo.
+- Habilidades de área projetam o cursor no chão; mirar no céu não consome recarga.
+- Distância de 3,5 a 8 m, suavidade e volume ajustáveis no menu, com preferências próprias da câmera em terceira pessoa.
 - Um ataque por clique, dois kits de habilidades, bots, runas e rodadas de eliminação.
 - Bots reconhecem campos hostis e projéteis próximos em rota de colisão, tentando sair ou esquivar com uma cadência de reação de 180–230 ms.
 - Movimento com aceleração e frenagem mais responsivas, guia de alcance/linha de tiro e Espaço como atalho de mobilidade.
@@ -30,7 +30,7 @@ No menu, **TREINO LIVRE** permite praticar os dois kits. Ative **Alvos em movime
 
 | Entrada | Ação |
 |---|---|
-| Mouse | Gira a câmera; mira central direciona ataques e habilidades |
+| Mouse | Cursor livre direciona ataques e habilidades, sem girar a câmera |
 | W / S | Avança / recua na direção horizontal da câmera |
 | A / D | Move para esquerda / direita em relação à tela |
 | Clique esquerdo | Um ataque básico por clique; segurar não repete |
@@ -92,7 +92,7 @@ Vence quem eliminar os três rivais. Se as duas equipes forem eliminadas na mesm
 
 ## Validação
 
-269 verificações automáticas aprovadas em 14 scripts: combate, controle, câmera, animação, efeitos, bots, telemetria, investida e colisões. Inclui duas partidas completas de seis bots. As verificações da câmera tática foram substituídas pelas da nova câmera; versões anteriores permanecem no histórico Git.
+272 verificações automáticas aprovadas em 14 scripts: combate, controle, câmera, animação, efeitos, bots, telemetria, investida e colisões. Inclui duas partidas completas de seis bots. As verificações da câmera tática foram substituídas pelas da nova câmera; versões anteriores permanecem no histórico Git.
 
 Inspeção gráfica de enquadramento, seleção, treino, prévia e execução do Campo glacial. Interface verificada em 1280×720 e 1024×768. Movimento sustentado foi verificado via InputMap, sem teste de tecla física mantida pressionada pela ferramenta.
 
@@ -102,7 +102,7 @@ Após importar o projeto no editor:
 python3 tools/validate.py --godot /caminho/para/Godot --output /caminho/para/logs
 ```
 
-Resultados atuais em `docs/validacao-terceira-pessoa/report.json`. Os avisos do ambiente restrito sobre logs locais e certificados do macOS são separados dos erros de script. Capturas em `tests/preview.tscn` são cenários montados de inspeção visual.
+Resultados atuais em `docs/validacao-cursor-livre/report.json`. Os avisos do ambiente restrito sobre logs locais e certificados do macOS são separados dos erros de script. Capturas em `tests/preview.tscn` são cenários montados de inspeção visual.
 
 Veja `docs/GUIA-DE-TESTE.md` para avaliar a sensação dos controles e `docs/ARTE-E-FONTES.md` para reconstruir os assets.
 

@@ -158,7 +158,7 @@ func _ready() -> void:
 		recharge.add_theme_stylebox_override("fill",charge_style)
 		content.add_child(recharge)
 		skill_bars.append(recharge)
-	rows.add_child(label("WASD mover   ·   Mouse: câmera e mira   ·   Q/E/R/F: usar   ·   Shift + habilidade: prévia   ·   Direito cancela   ·   Esc pausa",13,Color("aec0b5")))
+	rows.add_child(label("WASD mover   ·   Mouse: mira livre   ·   Q/E/R/F: usar   ·   Shift + habilidade: prévia   ·   Direito cancela   ·   Esc pausa",13,Color("aec0b5")))
 	reticle = Control.new()
 	root.add_child(reticle)
 	reticle.set_anchors_and_offsets_preset(Control.PRESET_TOP_LEFT)
@@ -221,17 +221,6 @@ func build_menu() -> void:
 		preferences_dirty = true
 		preferences_timer.start())
 	list.add_child(sensitivity)
-	list.add_child(label("Sensibilidade do mouse",13))
-	var mouse := HSlider.new()
-	mouse.min_value = .8
-	mouse.max_value = 4
-	mouse.step = .1
-	mouse.value = arena.settings.mouse_sensitivity*1000
-	mouse.value_changed.connect(func(value: float):
-		arena.settings.mouse_sensitivity = value/1000
-		preferences_dirty = true
-		preferences_timer.start())
-	list.add_child(mouse)
 	list.add_child(label("Distância da câmera",13))
 	var distance := HSlider.new()
 	distance.min_value = 3.5
@@ -335,7 +324,7 @@ func pause_game() -> void:
 
 func resume_game() -> void:
 	close_menu()
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 func show_result(reason: String) -> void:
 	title.text = arena.result

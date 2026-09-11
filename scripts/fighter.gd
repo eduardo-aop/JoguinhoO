@@ -130,6 +130,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if not arena.active:
 		return
 	if event is InputEventMouseButton and event.pressed:
+		arena.rig.cursor_position = event.position.clamp(Vector2.ZERO,get_viewport().get_visible_rect().size)
 		refresh_cursor_aim()
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			request_basic()

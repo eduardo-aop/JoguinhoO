@@ -12,6 +12,12 @@ func _ready() -> void:
 	game.hud.moving_targets_option.button_pressed = true
 	game.start_round("mage",true,true)
 	game.rig.aim_toward(Vector3(1,1.2,-2))
+	var motion := InputEventMouseMotion.new()
+	motion.position = get_viewport().get_visible_rect().size*.5+Vector2(120,35)
+	motion.screen_relative = Vector2(120,35)
+	var original_rotation := game.rig.rotation
+	get_viewport().push_input(motion,true)
+	print("FREE_CURSOR_NATIVE visible=",Input.mouse_mode == Input.MOUSE_MODE_VISIBLE," camera_stable=",game.rig.rotation == original_rotation," cursor=",game.rig.cursor_position)
 	await capture("res://work/brawler-training.png")
 	var preview := InputEventKey.new()
 	preview.physical_keycode = KEY_R

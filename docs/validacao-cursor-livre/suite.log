@@ -1,0 +1,78 @@
+ERROR: Failed to open 'user://logs/godot2026-09-11T15.38.32.log'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Failed to open log file for writing: user://logs/godot.log
+   at: rotate_file (core/io/logger.cpp:169)
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS initial hero selection
+PASS exactly three fighters per team
+PASS one human and five bots
+PASS warrior selectable with own stats
+PASS third person perspective enabled
+PASS turning actor leaves camera stable
+PASS melee arc reaches target ahead
+PASS melee rejects target behind
+PASS basic attack starts
+PASS basic attack obeys interval
+PASS melee windup before damage
+PASS single click delivers one melee hit without repeat
+PASS melee blocked by wall
+PASS guard blocks 75 percent from front
+PASS guard does not block rear damage
+PASS aegis reduces damage 30 percent
+PASS no friendly fire
+PASS ability preview does not spend cooldown
+PASS basic attack blocked during preparation
+PASS cancel preserves cooldown
+PASS warrior dash activates
+PASS dash travels forward
+PASS dash cannot cross cover
+PASS seismic ability activates
+PASS seismic applies damage and slow
+PASS special has long cooldown
+PASS mage selectable with different stats
+PASS mage projectile hits enemy
+PASS orb explosion damages each nearby enemy once
+PASS cover blocks projectile and explosion through wall
+PASS teleport activates
+PASS teleport stops at wall
+PASS teleport follows movement rather than facing
+PASS stationary teleport uses forward fallback
+PASS ground cast clamps to maximum range
+PASS ground cast rejects target behind cover
+PASS invalid cast preserves cooldown
+PASS field deals configured damage over five seconds
+PASS field applies slow
+PASS field damage independent of update rate
+PASS slows do not multiply
+PASS passive and active rune coexist
+PASS passive replacement preserves active rune
+PASS active replacement preserves passive rune
+PASS active shockwave consumes one use
+PASS active rune cannot be reused
+PASS healing rune restores health
+PASS both rune categories expire
+PASS all fixed rune locations populated
+PASS occupied rune sites do not duplicate
+PASS rune picked by proximity exactly once
+PASS empty rune site warns before spawn
+PASS pause freezes round cooldowns and effects
+PASS pause cancels preparation and frees mouse
+PASS zone damages outside only
+PASS zone contracts visibly
+PASS death clears runes and eliminates player
+PASS eliminated player follows living ally
+PASS switching to spectator restores body hidden by close camera
+PASS spectator cycles teammates
+PASS elimination ends and scores round once
+PASS winner check is idempotent
+PASS restart clears old projectiles fields and runes
+PASS restart resets hero health and zone
+PASS simultaneous team elimination is draw
+PASS complete six-bot match terminates for warrior
+MATCH {"participants":[{"abilities":[4,3,2,0],"alive":false,"damage":272.5,"damage_taken":270.0,"hero":"warrior","hp":0.0,"human":false,"kills":2,"runes":0,"team":0},{"abilities":[4,4,2,2],"alive":false,"damage":332.0,"damage_taken":335.0,"hero":"warrior","hp":0.0,"human":false,"kills":0,"runes":2,"team":0},{"abilities":[8,2,2,0],"alive":true,"damage":200.5,"damage_taken":105.3,"hero":"mage","hp":94.7,"human":false,"kills":1,"runes":0,"team":0},{"abilities":[2,2,1,0],"alive":false,"damage":253.6,"damage_taken":270.0,"hero":"warrior","hp":0.0,"human":false,"kills":0,"runes":1,"team":1},{"abilities":[0,1,1,0],"alive":false,"damage":172.0,"damage_taken":270.0,"hero":"warrior","hp":0.0,"human":false,"kills":0,"runes":0,"team":1},{"abilities":[8,4,2,2],"alive":false,"damage":284.7,"damage_taken":265.0,"hero":"mage","hp":0.0,"human":false,"kills":2,"runes":2,"team":1}],"reason":"Eliminação","round":18,"seconds":47.4,"winner":0}
+PASS complete six-bot match terminates for mage
+MATCH {"participants":[{"abilities":[1,1,1,0],"alive":false,"damage":176.0,"damage_taken":270.0,"hero":"warrior","hp":0.0,"human":false,"kills":0,"runes":0,"team":0},{"abilities":[7,2,2,0],"alive":true,"damage":196.3,"damage_taken":122.5,"hero":"mage","hp":77.5,"human":false,"kills":0,"runes":1,"team":0},{"abilities":[7,4,3,1],"alive":true,"damage":432.7,"damage_taken":152.0,"hero":"mage","hp":113.0,"human":false,"kills":3,"runes":4,"team":0},{"abilities":[5,4,2,1],"alive":false,"damage":266.2,"damage_taken":335.0,"hero":"warrior","hp":0.0,"human":false,"kills":1,"runes":1,"team":1},{"abilities":[5,3,2,0],"alive":false,"damage":128.0,"damage_taken":270.0,"hero":"warrior","hp":0.0,"human":false,"kills":0,"runes":0,"team":1},{"abilities":[8,3,2,0],"alive":false,"damage":150.3,"damage_taken":200.0,"hero":"mage","hp":0.0,"human":false,"kills":0,"runes":1,"team":1}],"reason":"Eliminação","round":19,"seconds":46.9,"winner":0}
+SUITE_COMPLETE checks=67 failures=0

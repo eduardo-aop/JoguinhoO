@@ -44,7 +44,18 @@ func run() -> void:
 	check(rig.aim_query().collider == enemy,"center ray targets visible enemy")
 	var old_cursor := rig.cursor_position
 	rig.cursor_position = Vector2.ZERO
-	check(rig.aim_query().collider == enemy,"screen cursor cannot shift centered aim")
+	check(rig.aim_query().collider != enemy,"moving cursor changes target away from center")
+	rig.cursor_position = old_cursor
+	var mouse := InputEventMouseMotion.new()
+	mouse.position = old_cursor+Vector2(120,20)
+	mouse.screen_relative = Vector2(120,20)
+	var rotation_before := rig.rotation
+	root.push_input(mouse,true)
+	check(rig.cursor_position == mouse.position and rig.rotation == rotation_before,"mouse moves free cursor without rotating camera")
+	rig._physics_process(1.0/60)
+	check(rig.cursor_position == mouse.position,"camera follow does not recenter cursor")
+	p.refresh_cursor_aim()
+	check(absf(p.rotation.y) > .01,"character faces off-center cursor")
 	rig.cursor_position = old_cursor
 	var wall := TrainingVisuals.box(game,Vector3(4,5,.4),Vector3(0,2,2.5),Color.WHITE,true)
 	await frames(3)
@@ -64,7 +75,7 @@ func run() -> void:
 	check(Input.mouse_mode == Input.MOUSE_MODE_VISIBLE,"pause releases mouse")
 	game.hud.resume_game()
 	if DisplayServer.get_name() != "headless":
-		check(Input.mouse_mode == Input.MOUSE_MODE_CAPTURED,"resume captures mouse")
+		check(Input.mouse_mode == Input.MOUSE_MODE_VISIBLE,"resume keeps cursor free")
 	game.cycle_spectator()
 	check(rig.actor == game.spectator and rig.position.is_equal_approx(rig.follow_target()),"spectator repositions camera")
 	game.queue_free()

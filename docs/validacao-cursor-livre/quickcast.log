@@ -1,0 +1,38 @@
+ERROR: Failed to open 'user://logs/godot2026-09-11T15.38.31.log'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Failed to open log file for writing: user://logs/godot.log
+   at: rotate_file (core/io/logger.cpp:169)
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS press casts immediately warrior/0
+PASS echo and release do not recast warrior/0
+PASS press casts immediately warrior/1
+PASS echo and release do not recast warrior/1
+PASS press casts immediately warrior/2
+PASS echo and release do not recast warrior/2
+PASS press casts immediately warrior/3
+PASS echo and release do not recast warrior/3
+PASS Shift R previews without casting warrior
+PASS releasing preview never casts warrior
+PASS pause blocks quickcast warrior
+PASS heal remains immediate warrior
+PASS press casts immediately mage/0
+PASS echo and release do not recast mage/0
+PASS press casts immediately mage/1
+PASS echo and release do not recast mage/1
+PASS press casts immediately mage/2
+PASS echo and release do not recast mage/2
+PASS press casts immediately mage/3
+PASS echo and release do not recast mage/3
+PASS Shift R previews without casting mage
+PASS releasing preview never casts mage
+PASS pause blocks quickcast mage
+PASS heal remains immediate mage
+PASS blocked ground quickcast preserves cooldown
+PASS unavailable skill explains cooldown
+PASS empty rune slot explains why it cannot cast
+PASS enemy basic windup shows attack direction
+PASS enemy telegraph clears after windup
+QUICKCAST_COMPLETE checks=29 failures=0

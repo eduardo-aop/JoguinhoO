@@ -189,7 +189,7 @@ func start_round(hero_choice: String = "warrior", skip_countdown: bool = false, 
 	countdown = -1.0 if skip_countdown else 3.0
 	active = skip_countdown
 	hud.close_menu()
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 func _physics_process(dt: float) -> void:
 	if countdown >= 0:

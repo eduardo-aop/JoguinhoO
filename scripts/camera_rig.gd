@@ -26,9 +26,9 @@ func _ready() -> void:
 	snap_to_actor()
 
 func _input(event: InputEvent) -> void:
-	if get_tree().paused or Input.mouse_mode != Input.MOUSE_MODE_CAPTURED: return
-	if event is InputEventMouseMotion:
-		look(event.screen_relative)
+	if get_tree().paused: return
+	if event is InputEventMouseMotion or event is InputEventMouseButton:
+		cursor_position = event.position.clamp(Vector2.ZERO,get_viewport().get_visible_rect().size)
 
 func look(delta: Vector2) -> void:
 	yaw = wrapf(yaw-delta.x*settings.mouse_sensitivity,-PI,PI)
@@ -56,7 +56,6 @@ func follow_target() -> Vector3:
 func _physics_process(dt: float) -> void:
 	if not is_instance_valid(actor): return
 	global_position = global_position.lerp(follow_target(),1.0-exp(-settings.camera_follow_speed*dt))
-	cursor_position = get_viewport().get_visible_rect().size*.5
 	update_collision(dt)
 
 func update_collision(dt: float) -> void:
@@ -86,10 +85,10 @@ func ground_at(screen: Vector2) -> Vector3:
 	return hit if hit != null else Vector3.INF
 
 func cursor_ground() -> Vector3:
-	return ground_at(get_viewport().get_visible_rect().size*.5)
+	return ground_at(cursor_position)
 
 func aim_query(max_distance: float = 100.0) -> Dictionary:
-	return aim_at(get_viewport().get_visible_rect().size*.5,max_distance)
+	return aim_at(cursor_position,max_distance)
 
 func aim_at(screen: Vector2, max_distance: float = 100.0) -> Dictionary:
 	var origin := camera.project_ray_origin(screen)
