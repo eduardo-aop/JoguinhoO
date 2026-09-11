@@ -1,0 +1,32 @@
+{
+  "definition": "Wanted movement above 0.5, less than 0.35 m displacement for at least 1.5 s; events may include intentional body blocking.",
+  "events": [
+    {
+      "fighter": 1,
+      "hero": "mage",
+      "path_points": 3,
+      "position": [
+        -10.9391469955444,
+        0.000838465348351747,
+        -0.567497432231903
+      ],
+      "seconds": 5.81666666666665,
+      "seed": 3705,
+      "target_distance": 7.94728326797485
+    },
+    {
+      "fighter": 2,
+      "hero": "mage",
+      "path_points": 2,
+      "position": [
+        -11.0514478683472,
+        0.000842254143208265,
+        0.306266784667969
+      ],
+      "seconds": 5.91666666666665,
+      "seed": 3705,
+      "target_distance": 8.04650974273682
+    }
+  ],
+  "matches": 12
+}

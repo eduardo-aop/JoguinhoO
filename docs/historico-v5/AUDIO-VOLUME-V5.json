@@ -1,0 +1,9 @@
+{
+  "existing_voice_gain_adjusted": true,
+  "muted_during_pause": true,
+  "native_audio_started": true,
+  "passed": true,
+  "stream_loaded": true,
+  "voice_bus": "RiftEffects",
+  "voice_playing": true
+}

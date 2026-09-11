@@ -1,0 +1,9 @@
+{
+  "draw_calls_median": 319,
+  "draw_calls_p95": 556,
+  "median_ms": 11.6666666666667,
+  "note": "Observed on this machine; includes frame pacing and is not a GPU-only benchmark.",
+  "p95_ms": 23.199,
+  "rendering_method": "gl_compatibility",
+  "samples": 1620
+}

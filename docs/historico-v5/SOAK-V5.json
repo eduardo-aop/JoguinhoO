@@ -1,0 +1,1425 @@
+{
+  "checks_passed": true,
+  "complete": true,
+  "note": "Real-time graphical bot-only sessions with spatial audio enabled at low volume. Frame timing includes pacing; focus pause is bypassed only by this diagnostic.",
+  "rounds": 12,
+  "samples": [
+    {
+      "cleanup_ok": true,
+      "median_frame_ms": 12.4545757575758,
+      "nodes_after_cleanup": 182.0,
+      "orphan_nodes": 0.0,
+      "p95_frame_ms": 16.6666666666667,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 241.8,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 180.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            9,
+            2,
+            3,
+            0
+          ],
+          "alive": false,
+          "damage": 363.2,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 4,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            2,
+            1,
+            1
+          ],
+          "alive": false,
+          "damage": 139.9,
+          "damage_taken": 335.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 240.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            9,
+            0,
+            3,
+            1
+          ],
+          "alive": true,
+          "damage": 360.1,
+          "damage_taken": 180.0,
+          "hero": "mage",
+          "hp": 85.0,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "peak_effects": 12,
+      "peak_playing_voices": 10,
+      "reason": "Eliminação",
+      "round": 1,
+      "seconds": 56.7,
+      "static_memory_bytes": 45609024.0,
+      "winner": 1
+    },
+    {
+      "cleanup_ok": true,
+      "median_frame_ms": 12.5,
+      "nodes_after_cleanup": 181.0,
+      "orphan_nodes": 0.0,
+      "p95_frame_ms": 16.6666666666667,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 126.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            8,
+            3,
+            3,
+            0
+          ],
+          "alive": true,
+          "damage": 445.7,
+          "damage_taken": 106.0,
+          "hero": "mage",
+          "hp": 94.0,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            8,
+            1,
+            3,
+            0
+          ],
+          "alive": true,
+          "damage": 297.8,
+          "damage_taken": 175.0,
+          "hero": "mage",
+          "hp": 25.0,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            4,
+            3,
+            2,
+            0
+          ],
+          "alive": false,
+          "damage": 172.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 78.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            8,
+            0,
+            3,
+            2
+          ],
+          "alive": false,
+          "damage": 301.0,
+          "damage_taken": 330.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 3,
+          "team": 1
+        }
+      ],
+      "peak_effects": 8,
+      "peak_playing_voices": 13,
+      "reason": "Eliminação",
+      "round": 2,
+      "seconds": 49.7,
+      "static_memory_bytes": 45611354.0,
+      "winner": 0
+    },
+    {
+      "cleanup_ok": true,
+      "median_frame_ms": 12.5,
+      "nodes_after_cleanup": 182.0,
+      "orphan_nodes": 0.0,
+      "p95_frame_ms": 22.965,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 174.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 136.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            15,
+            2,
+            4,
+            0
+          ],
+          "alive": false,
+          "damage": 441.8,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 168.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            3,
+            2,
+            1,
+            1
+          ],
+          "alive": false,
+          "damage": 208.0,
+          "damage_taken": 335.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 1
+        },
+        {
+          "abilities": [
+            15,
+            0,
+            4,
+            0
+          ],
+          "alive": true,
+          "damage": 364.0,
+          "damage_taken": 146.8,
+          "hero": "mage",
+          "hp": 53.2,
+          "human": false,
+          "kills": 2,
+          "runes": 4,
+          "team": 1
+        }
+      ],
+      "peak_effects": 10,
+      "peak_playing_voices": 12,
+      "reason": "Eliminação",
+      "round": 3,
+      "seconds": 92.1,
+      "static_memory_bytes": 45727328.0,
+      "winner": 1
+    },
+    {
+      "cleanup_ok": true,
+      "median_frame_ms": 12.367,
+      "nodes_after_cleanup": 181.0,
+      "orphan_nodes": 0.0,
+      "p95_frame_ms": 14.8148148148148,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 136.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            7,
+            1,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 347.0,
+          "damage_taken": 111.6,
+          "hero": "mage",
+          "hp": 88.4,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            7,
+            1,
+            2,
+            1
+          ],
+          "alive": true,
+          "damage": 322.0,
+          "damage_taken": 154.9,
+          "hero": "mage",
+          "hp": 110.1,
+          "human": false,
+          "kills": 3,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            2,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 98.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 121.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            7,
+            0,
+            2,
+            1
+          ],
+          "alive": false,
+          "damage": 317.0,
+          "damage_taken": 265.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 3,
+          "team": 1
+        }
+      ],
+      "peak_effects": 9,
+      "peak_playing_voices": 12,
+      "reason": "Eliminação",
+      "round": 4,
+      "seconds": 45.0,
+      "static_memory_bytes": 45663084.0,
+      "winner": 0
+    },
+    {
+      "cleanup_ok": true,
+      "median_frame_ms": 12.5,
+      "nodes_after_cleanup": 182.0,
+      "orphan_nodes": 0.0,
+      "p95_frame_ms": 20.3703703703704,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 107.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 104.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            4,
+            2,
+            2,
+            0
+          ],
+          "alive": false,
+          "damage": 327.3,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            3,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 274.0,
+          "damage_taken": 268.8,
+          "hero": "warrior",
+          "hp": 1.2,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 264.9,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 2,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            4,
+            0,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 201.1,
+          "damage_taken": 0.0,
+          "hero": "mage",
+          "hp": 200.0,
+          "human": false,
+          "kills": 1,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "peak_effects": 11,
+      "peak_playing_voices": 11,
+      "reason": "Eliminação",
+      "round": 5,
+      "seconds": 25.6,
+      "static_memory_bytes": 45617186.0,
+      "winner": 1
+    },
+    {
+      "cleanup_ok": true,
+      "median_frame_ms": 11.253,
+      "nodes_after_cleanup": 181.0,
+      "orphan_nodes": 0.0,
+      "p95_frame_ms": 14.8148148148148,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 143.3,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            7,
+            3,
+            3,
+            1
+          ],
+          "alive": true,
+          "damage": 417.8,
+          "damage_taken": 111.0,
+          "hero": "mage",
+          "hp": 154.0,
+          "human": false,
+          "kills": 2,
+          "runes": 3,
+          "team": 0
+        },
+        {
+          "abilities": [
+            8,
+            1,
+            3,
+            0
+          ],
+          "alive": true,
+          "damage": 239.9,
+          "damage_taken": 193.3,
+          "hero": "mage",
+          "hp": 6.7,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 166.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 98.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            8,
+            1,
+            3,
+            1
+          ],
+          "alive": false,
+          "damage": 310.3,
+          "damage_taken": 261.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "peak_effects": 8,
+      "peak_playing_voices": 10,
+      "reason": "Eliminação",
+      "round": 6,
+      "seconds": 49.6,
+      "static_memory_bytes": 45689306.0,
+      "winner": 0
+    },
+    {
+      "cleanup_ok": true,
+      "median_frame_ms": 12.5,
+      "nodes_after_cleanup": 182.0,
+      "orphan_nodes": 0.0,
+      "p95_frame_ms": 16.6666666666667,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 231.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 116.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            8,
+            1,
+            3,
+            0
+          ],
+          "alive": false,
+          "damage": 274.2,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            2,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 188.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 157.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            8,
+            0,
+            3,
+            1
+          ],
+          "alive": true,
+          "damage": 395.0,
+          "damage_taken": 81.2,
+          "hero": "mage",
+          "hp": 183.8,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "peak_effects": 11,
+      "peak_playing_voices": 11,
+      "reason": "Eliminação",
+      "round": 7,
+      "seconds": 48.2,
+      "static_memory_bytes": 45723322.0,
+      "winner": 1
+    },
+    {
+      "cleanup_ok": true,
+      "median_frame_ms": 12.418,
+      "nodes_after_cleanup": 181.0,
+      "orphan_nodes": 0.0,
+      "p95_frame_ms": 14.037,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 91.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            8,
+            1,
+            3,
+            0
+          ],
+          "alive": false,
+          "damage": 335.5,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            5,
+            2,
+            2,
+            0
+          ],
+          "alive": false,
+          "damage": 327.3,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 141.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 118.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            8,
+            0,
+            3,
+            1
+          ],
+          "alive": true,
+          "damage": 411.0,
+          "damage_taken": 214.3,
+          "hero": "mage",
+          "hp": 50.7,
+          "human": false,
+          "kills": 2,
+          "runes": 3,
+          "team": 1
+        }
+      ],
+      "peak_effects": 9,
+      "peak_playing_voices": 10,
+      "reason": "Eliminação",
+      "round": 8,
+      "seconds": 49.8,
+      "static_memory_bytes": 45722674.0,
+      "winner": 1
+    },
+    {
+      "cleanup_ok": true,
+      "median_frame_ms": 12.5,
+      "nodes_after_cleanup": 182.0,
+      "orphan_nodes": 0.0,
+      "p95_frame_ms": 16.6666666666667,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 111.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 172.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            10,
+            3,
+            3,
+            1
+          ],
+          "alive": true,
+          "damage": 457.0,
+          "damage_taken": 227.9,
+          "hero": "mage",
+          "hp": 37.1,
+          "human": false,
+          "kills": 3,
+          "runes": 3,
+          "team": 0
+        },
+        {
+          "abilities": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 168.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 187.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            11,
+            1,
+            3,
+            0
+          ],
+          "alive": false,
+          "damage": 413.0,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 3,
+          "team": 1
+        }
+      ],
+      "peak_effects": 9,
+      "peak_playing_voices": 11,
+      "reason": "Eliminação",
+      "round": 9,
+      "seconds": 67.3,
+      "static_memory_bytes": 45832364.0,
+      "winner": 0
+    },
+    {
+      "cleanup_ok": true,
+      "median_frame_ms": 12.5,
+      "nodes_after_cleanup": 181.0,
+      "orphan_nodes": 0.0,
+      "p95_frame_ms": 14.8148148148148,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 91.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            5,
+            1,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 285.7,
+          "damage_taken": 100.7,
+          "hero": "mage",
+          "hp": 99.3,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            5,
+            2,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 427.8,
+          "damage_taken": 100.2,
+          "hero": "mage",
+          "hp": 99.8,
+          "human": false,
+          "kills": 2,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            2,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 150.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 78.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            5,
+            0,
+            2,
+            1
+          ],
+          "alive": false,
+          "damage": 242.8,
+          "damage_taken": 265.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 1
+        }
+      ],
+      "peak_effects": 9,
+      "peak_playing_voices": 10,
+      "reason": "Eliminação",
+      "round": 10,
+      "seconds": 29.9,
+      "static_memory_bytes": 45715070.0,
+      "winner": 0
+    },
+    {
+      "cleanup_ok": true,
+      "median_frame_ms": 12.1212121212121,
+      "nodes_after_cleanup": 182.0,
+      "orphan_nodes": 0.0,
+      "p95_frame_ms": 16.6666666666667,
+      "participants": [
+        {
+          "abilities": [
+            2,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 184.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            2,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 177.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 2,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            10,
+            1,
+            3,
+            1
+          ],
+          "alive": true,
+          "damage": 379.0,
+          "damage_taken": 140.5,
+          "hero": "mage",
+          "hp": 123.0,
+          "human": false,
+          "kills": 1,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 164.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 132.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            10,
+            2,
+            3,
+            0
+          ],
+          "alive": false,
+          "damage": 384.5,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 2,
+          "runes": 1,
+          "team": 1
+        }
+      ],
+      "peak_effects": 10,
+      "peak_playing_voices": 10,
+      "reason": "Eliminação",
+      "round": 11,
+      "seconds": 62.7,
+      "static_memory_bytes": 45802340.0,
+      "winner": 0
+    },
+    {
+      "cleanup_ok": true,
+      "median_frame_ms": 12.5,
+      "nodes_after_cleanup": 181.0,
+      "orphan_nodes": 0.0,
+      "p95_frame_ms": 16.6666666666667,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 116.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            8,
+            3,
+            3,
+            0
+          ],
+          "alive": true,
+          "damage": 416.2,
+          "damage_taken": 33.3,
+          "hero": "mage",
+          "hp": 166.7,
+          "human": false,
+          "kills": 3,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            8,
+            2,
+            3,
+            0
+          ],
+          "alive": true,
+          "damage": 272.8,
+          "damage_taken": 68.0,
+          "hero": "mage",
+          "hp": 132.0,
+          "human": false,
+          "kills": 0,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            4,
+            3,
+            1,
+            1
+          ],
+          "alive": false,
+          "damage": 166.0,
+          "damage_taken": 335.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 66.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            8,
+            0,
+            3,
+            0
+          ],
+          "alive": false,
+          "damage": 139.3,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 1
+        }
+      ],
+      "peak_effects": 9,
+      "peak_playing_voices": 10,
+      "reason": "Eliminação",
+      "round": 12,
+      "seconds": 49.5,
+      "static_memory_bytes": 45801688.0,
+      "winner": 0
+    }
+  ],
+  "wall_seconds": 627.346
+}

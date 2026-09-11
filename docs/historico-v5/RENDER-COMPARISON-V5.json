@@ -1,0 +1,19 @@
+{
+  "conditions": "Same static scene, seed, camera, six heroes and renderer; excludes active gameplay. Timing includes frame pacing.",
+  "results": [
+    {
+      "batched": false,
+      "draw_calls_median": 944,
+      "median_ms": 12.5,
+      "p95_ms": 15.384,
+      "samples": 720
+    },
+    {
+      "batched": true,
+      "draw_calls_median": 422,
+      "median_ms": 8.33333333333333,
+      "p95_ms": 12.962962962963,
+      "samples": 720
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+RIFT V3 — Validação
+10/09/2026
+
+117 verificações aprovadas: 66 de regras, 25 de entrada e stress, 26 de polimento.
+10 partidas completas com bots, incluindo 8 reinícios consecutivos.
+Revisão gráfica no Godot 4.7.2: seleção, guerreiro, mago, zona e resultado; zero erros no depurador gráfico.
+Áudio é desativado no modo headless, que usa driver dummy. Testes automáticos verificam gerenciamento de vozes; a qualidade sonora requer avaliação humana.
+O executável mono headless emite avisos de acesso ao log de usuário e certificados do macOS neste ambiente restrito. Não houve erros de scripts nem vazamentos nos três logs finais.
+
+
+v3-suite-release.log
+ERROR: Failed to open 'user://logs/godot2026-09-10T20.58.05.log'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Failed to open log file for writing: user://logs/godot.log
+   at: rotate_file (core/io/logger.cpp:169)
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS initial hero selection
+PASS exactly three fighters per team
+PASS one human and five bots
+PASS warrior selectable with own stats
+PASS third person perspective retained
+PASS camera rotates actor yaw without tilting body
+PASS melee arc reaches target ahead
+PASS melee rejects target behind
+PASS basic attack starts
+PASS basic attack obeys interval
+PASS melee windup before damage
+PASS single click delivers one melee hit without repeat
+PASS melee blocked by wall
+PASS guard blocks 75 percent from front
+PASS guard does not block rear damage
+PASS aegis reduces damage 30 percent
+PASS no friendly fire
+PASS holding ability prepares without spending cooldown
+PASS basic attack blocked during preparation
+PASS cancel preserves cooldown
+PASS warrior dash activates
+PASS dash travels forward
+PASS dash cannot cross cover
+PASS seismic ability activates
+PASS seismic applies damage and slow
+PASS special has long cooldown
+PASS mage selectable with different stats
+PASS mage projectile hits enemy
+PASS orb explosion damages each nearby enemy once
+PASS cover blocks projectile and explosion through wall
+PASS teleport activates
+PASS teleport stops at wall
+PASS teleport follows movement rather than facing
+PASS stationary teleport uses forward fallback
+PASS ground cast clamps to maximum range
+PASS ground cast rejects target behind cover
+PASS invalid cast preserves cooldown
+PASS field deals configured damage over five seconds
+PASS field applies slow
+PASS field damage independent of update rate
+PASS slows do not multiply
+PASS passive and active rune coexist
+PASS passive replacement preserves active rune
+PASS active replacement preserves passive rune
+PASS active shockwave consumes one use
+PASS active rune cannot be reused
+PASS healing rune restores health
+PASS both rune categories expire
+PASS all fixed rune locations populated
+PASS occupied rune sites do not duplicate
+PASS rune picked by proximity exactly once
+PASS empty rune site warns before spawn
+PASS pause freezes round cooldowns and effects
+PASS pause cancels preparation and frees mouse
+PASS zone damages outside only
+PASS zone contracts visibly
+PASS death clears runes and eliminates player
+PASS eliminated player follows living ally
+PASS spectator cycles teammates
+PASS elimination ends and scores round once
+PASS winner check is idempotent
+PASS restart clears old projectiles fields and runes
+PASS restart resets hero health and zone
+PASS simultaneous team elimination is draw
+PASS complete six-bot match terminates for warrior
+MATCH {"reason":"Eliminação","round":18,"seconds":23.9,"winner":1}
+PASS complete six-bot match terminates for mage
+MATCH {"reason":"Eliminação","round":19,"seconds":47.6,"winner":0}
+SUITE_COMPLETE checks=66 failures=0
+
+v3-input-release.log
+ERROR: Failed to open 'user://logs/godot2026-09-10T20.58.13.log'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Failed to open log file for writing: user://logs/godot.log
+   at: rotate_file (core/io/logger.cpp:169)
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS Q key press only prepares
+PASS Q release executes once
+PASS R prepares before cancellation
+PASS right click cancels and release does not execute
+PASS GUI mouse press produces one attack only
+PASS guard is immediate on E press
+PASS Esc pauses through input pipeline
+PASS second Esc resumes through input pipeline
+PASS hard round limit always produces result
+PASS stress match 1 terminates
+PASS stress restart maintains exactly six actors
+STRESS_MATCH {"reason":"Eliminação","round":2,"seconds":28.9,"winner":0}
+PASS stress match 2 terminates
+PASS stress restart maintains exactly six actors
+STRESS_MATCH {"reason":"Eliminação","round":3,"seconds":32.1,"winner":0}
+PASS stress match 3 terminates
+PASS stress restart maintains exactly six actors
+STRESS_MATCH {"reason":"Eliminação","round":4,"seconds":27.1,"winner":0}
+PASS stress match 4 terminates
+PASS stress restart maintains exactly six actors
+STRESS_MATCH {"reason":"Eliminação","round":5,"seconds":48.2,"winner":1}
+PASS stress match 5 terminates
+PASS stress restart maintains exactly six actors
+STRESS_MATCH {"reason":"Eliminação","round":6,"seconds":61.3,"winner":1}
+PASS stress match 6 terminates
+PASS stress restart maintains exactly six actors
+STRESS_MATCH {"reason":"Eliminação","round":7,"seconds":52.0,"winner":0}
+PASS stress match 7 terminates
+PASS stress restart maintains exactly six actors
+STRESS_MATCH {"reason":"Eliminação","round":8,"seconds":34.3,"winner":0}
+PASS stress match 8 terminates
+PASS stress restart maintains exactly six actors
+STRESS_MATCH {"reason":"Eliminação","round":9,"seconds":40.0,"winner":0}
+INPUT_STRESS_COMPLETE checks=25 failures=0
+
+v3-polish-release.log
+ERROR: Failed to open 'user://logs/godot2026-09-10T20.58.58.log'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Failed to open log file for writing: user://logs/godot.log
+   at: rotate_file (core/io/logger.cpp:169)
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS camera starts at third-person distance warrior
+PASS camera retracts before obstacle warrior
+PASS camera returns gradually warrior
+PASS camera restores distance after obstacle warrior
+PASS imported skeleton warrior
+PASS weapon attached to hand warrior
+PASS legs keep animating during attack warrior
+PASS attack animation plays warrior
+PASS late click buffered warrior
+PASS buffer executes exactly once warrior
+PASS cancel clears queued input warrior
+PASS release brakes promptly warrior
+PASS audio reset releases voice streams warrior
+PASS camera starts at third-person distance mage
+PASS camera retracts before obstacle mage
+PASS camera returns gradually mage
+PASS camera restores distance after obstacle mage
+PASS imported skeleton mage
+PASS weapon attached to hand mage
+PASS legs keep animating during attack mage
+PASS attack animation plays mage
+PASS late click buffered mage
+PASS buffer executes exactly once mage
+PASS cancel clears queued input mage
+PASS release brakes promptly mage
+PASS audio reset releases voice streams mage
+POLISH_COMPLETE checks=26 failures=0

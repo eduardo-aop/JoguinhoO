@@ -1,0 +1,134 @@
+{
+  "generated_utc": "2026-09-11T03:31:20.345098+00:00",
+  "project": "<workspace>/work/v5-clean-check/arena-v5-ciclo",
+  "tests": [
+    {
+      "name": "suite",
+      "checks": 67,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T00.31.20.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "input_and_stress",
+      "checks": 26,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T00.31.22.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "polish",
+      "checks": 30,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T00.31.30.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "control",
+      "checks": 14,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T00.31.30.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "attack_timing",
+      "checks": 6,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T00.31.31.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "effects",
+      "checks": 17,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T00.31.31.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "tactics",
+      "checks": 8,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T00.31.31.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "telemetry",
+      "checks": 7,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T00.31.32.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "dash_timing",
+      "checks": 6,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T00.31.32.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    }
+  ],
+  "checks": 181,
+  "passed": true
+}

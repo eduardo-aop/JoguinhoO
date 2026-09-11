@@ -1,0 +1,3621 @@
+{
+  "matches": [
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 164.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 87.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            4,
+            3,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 286.4,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            3,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 350.1,
+          "damage_taken": 240.9,
+          "hero": "warrior",
+          "hp": 29.1,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 131.8,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            4,
+            0,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 258.0,
+          "damage_taken": 27.0,
+          "hero": "mage",
+          "hp": 173.0,
+          "human": false,
+          "kills": 1,
+          "runes": 3,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 1,
+      "seconds": 25.9,
+      "seed": 2400,
+      "winner": 1
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 164.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 87.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            3,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 282.6,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "alive": true,
+          "damage": 332.0,
+          "damage_taken": 237.1,
+          "hero": "warrior",
+          "hp": 32.9,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 131.8,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            4,
+            1,
+            1,
+            0
+          ],
+          "alive": true,
+          "damage": 276.2,
+          "damage_taken": 27.0,
+          "hero": "mage",
+          "hp": 173.0,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 2,
+      "seconds": 21.9,
+      "seed": 2400,
+      "winner": 1
+    },
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 75.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            6,
+            2,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 300.0,
+          "damage_taken": 53.3,
+          "hero": "mage",
+          "hp": 146.7,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            6,
+            2,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 430.0,
+          "damage_taken": 138.1,
+          "hero": "mage",
+          "hp": 61.9,
+          "human": false,
+          "kills": 2,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 115.6,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 134.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            6,
+            0,
+            2,
+            1
+          ],
+          "alive": false,
+          "damage": 211.8,
+          "damage_taken": 265.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 3,
+      "seconds": 36.8,
+      "seed": 2401,
+      "winner": 0
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 75.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            6,
+            2,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 396.2,
+          "damage_taken": 121.0,
+          "hero": "mage",
+          "hp": 79.0,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            5,
+            2,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 398.8,
+          "damage_taken": 114.0,
+          "hero": "mage",
+          "hp": 86.0,
+          "human": false,
+          "kills": 3,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            2,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 126.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 118.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            6,
+            0,
+            2,
+            2
+          ],
+          "alive": false,
+          "damage": 261.0,
+          "damage_taken": 330.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 4,
+      "seconds": 33.9,
+      "seed": 2401,
+      "winner": 0
+    },
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 164.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 136.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            9,
+            2,
+            3,
+            1
+          ],
+          "alive": false,
+          "damage": 359.2,
+          "damage_taken": 262.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 191.9,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 120.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            9,
+            0,
+            3,
+            1
+          ],
+          "alive": true,
+          "damage": 490.1,
+          "damage_taken": 119.2,
+          "hero": "mage",
+          "hp": 144.8,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 5,
+      "seconds": 54.4,
+      "seed": 2402,
+      "winner": 1
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 180.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 152.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            11,
+            2,
+            3,
+            0
+          ],
+          "alive": false,
+          "damage": 405.3,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            2,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 187.9,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 120.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            11,
+            0,
+            4,
+            1
+          ],
+          "alive": true,
+          "damage": 432.1,
+          "damage_taken": 197.3,
+          "hero": "mage",
+          "hp": 64.8,
+          "human": false,
+          "kills": 2,
+          "runes": 3,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 6,
+      "seconds": 70.3,
+      "seed": 2402,
+      "winner": 1
+    },
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 200.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            4,
+            3,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 241.4,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            8,
+            2,
+            3,
+            0
+          ],
+          "alive": false,
+          "damage": 311.2,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            2,
+            1,
+            1
+          ],
+          "alive": false,
+          "damage": 178.0,
+          "damage_taken": 335.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 2,
+          "team": 1
+        },
+        {
+          "abilities": [
+            2,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 156.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            8,
+            0,
+            3,
+            1
+          ],
+          "alive": true,
+          "damage": 336.0,
+          "damage_taken": 147.6,
+          "hero": "mage",
+          "hp": 117.4,
+          "human": false,
+          "kills": 3,
+          "runes": 1,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 7,
+      "seconds": 51.6,
+      "seed": 2403,
+      "winner": 1
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 152.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            6,
+            3,
+            2,
+            0
+          ],
+          "alive": false,
+          "damage": 339.0,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            7,
+            1,
+            2,
+            0
+          ],
+          "alive": false,
+          "damage": 183.3,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            4,
+            3,
+            2,
+            0
+          ],
+          "alive": false,
+          "damage": 240.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 103.3,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            8,
+            0,
+            2,
+            1
+          ],
+          "alive": true,
+          "damage": 326.2,
+          "damage_taken": 134.3,
+          "hero": "mage",
+          "hp": 130.5,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 8,
+      "seconds": 46.4,
+      "seed": 2403,
+      "winner": 1
+    },
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 168.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 107.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            15,
+            1,
+            5,
+            1
+          ],
+          "alive": true,
+          "damage": 529.5,
+          "damage_taken": 205.0,
+          "hero": "mage",
+          "hp": 57.8,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            2,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 197.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 119.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            15,
+            0,
+            5,
+            1
+          ],
+          "alive": false,
+          "damage": 428.5,
+          "damage_taken": 265.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 4,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 9,
+      "seconds": 93.3,
+      "seed": 2404,
+      "winner": 0
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 168.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 107.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            15,
+            3,
+            5,
+            1
+          ],
+          "alive": false,
+          "damage": 523.9,
+          "damage_taken": 262.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            2,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 197.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 119.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            15,
+            0,
+            5,
+            1
+          ],
+          "alive": true,
+          "damage": 485.5,
+          "damage_taken": 259.4,
+          "hero": "mage",
+          "hp": 1.5,
+          "human": false,
+          "kills": 2,
+          "runes": 4,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 10,
+      "seconds": 94.0,
+      "seed": 2404,
+      "winner": 1
+    },
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 148.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            7,
+            3,
+            3,
+            1
+          ],
+          "alive": true,
+          "damage": 335.3,
+          "damage_taken": 135.5,
+          "hero": "mage",
+          "hp": 129.5,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            8,
+            2,
+            3,
+            0
+          ],
+          "alive": true,
+          "damage": 321.7,
+          "damage_taken": 172.3,
+          "hero": "mage",
+          "hp": 27.7,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            3,
+            2,
+            0
+          ],
+          "alive": false,
+          "damage": 149.3,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 133.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            8,
+            2,
+            3,
+            1
+          ],
+          "alive": false,
+          "damage": 295.5,
+          "damage_taken": 265.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 11,
+      "seconds": 47.9,
+      "seed": 2405,
+      "winner": 0
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 148.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            7,
+            3,
+            3,
+            0
+          ],
+          "alive": true,
+          "damage": 382.2,
+          "damage_taken": 61.2,
+          "hero": "mage",
+          "hp": 138.8,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            8,
+            1,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 336.3,
+          "damage_taken": 143.8,
+          "hero": "mage",
+          "hp": 56.2,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            4,
+            3,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 114.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 1
+        },
+        {
+          "abilities": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 146.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            7,
+            1,
+            2,
+            2
+          ],
+          "alive": false,
+          "damage": 215.0,
+          "damage_taken": 326.5,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 3,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 12,
+      "seconds": 46.7,
+      "seed": 2405,
+      "winner": 0
+    },
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 222.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 119.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            9,
+            2,
+            3,
+            0
+          ],
+          "alive": false,
+          "damage": 362.2,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 3,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 135.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 220.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            9,
+            0,
+            3,
+            1
+          ],
+          "alive": true,
+          "damage": 384.5,
+          "damage_taken": 164.2,
+          "hero": "mage",
+          "hp": 97.2,
+          "human": false,
+          "kills": 3,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 13,
+      "seconds": 59.4,
+      "seed": 2406,
+      "winner": 1
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 222.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 119.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            4,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 214.0,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            3,
+            2,
+            1
+          ],
+          "alive": true,
+          "damage": 182.0,
+          "damage_taken": 286.0,
+          "hero": "warrior",
+          "hp": 49.0,
+          "human": false,
+          "kills": 1,
+          "runes": 2,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 220.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            4,
+            1,
+            1,
+            0
+          ],
+          "alive": true,
+          "damage": 338.0,
+          "damage_taken": 0.0,
+          "hero": "mage",
+          "hp": 200.0,
+          "human": false,
+          "kills": 2,
+          "runes": 1,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 14,
+      "seconds": 23.9,
+      "seed": 2406,
+      "winner": 1
+    },
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 132.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            7,
+            2,
+            3,
+            0
+          ],
+          "alive": true,
+          "damage": 356.4,
+          "damage_taken": 164.7,
+          "hero": "mage",
+          "hp": 35.3,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            7,
+            1,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 315.3,
+          "damage_taken": 93.8,
+          "hero": "mage",
+          "hp": 106.2,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            2,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 178.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            2,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 118.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            8,
+            1,
+            3,
+            1
+          ],
+          "alive": false,
+          "damage": 232.5,
+          "damage_taken": 263.7,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 15,
+      "seconds": 47.4,
+      "seed": 2407,
+      "winner": 0
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 132.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            5,
+            1,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 228.5,
+          "damage_taken": 19.7,
+          "hero": "mage",
+          "hp": 180.3,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            5,
+            2,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 444.5,
+          "damage_taken": 149.2,
+          "hero": "mage",
+          "hp": 50.8,
+          "human": false,
+          "kills": 3,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 168.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 118.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 1
+        },
+        {
+          "abilities": [
+            5,
+            0,
+            2,
+            1
+          ],
+          "alive": false,
+          "damage": 152.8,
+          "damage_taken": 265.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 16,
+      "seconds": 31.4,
+      "seed": 2407,
+      "winner": 0
+    },
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 113.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 152.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            8,
+            3,
+            3,
+            0
+          ],
+          "alive": false,
+          "damage": 444.5,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 184.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            4,
+            3,
+            2,
+            2
+          ],
+          "alive": false,
+          "damage": 292.1,
+          "damage_taken": 400.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 2,
+          "runes": 3,
+          "team": 1
+        },
+        {
+          "abilities": [
+            9,
+            0,
+            3,
+            0
+          ],
+          "alive": true,
+          "damage": 263.9,
+          "damage_taken": 40.0,
+          "hero": "mage",
+          "hp": 160.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 17,
+      "seconds": 53.8,
+      "seed": 2408,
+      "winner": 1
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 110.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 152.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            6,
+            3,
+            2,
+            0
+          ],
+          "alive": false,
+          "damage": 428.3,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 3,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 184.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            4,
+            3,
+            2,
+            2
+          ],
+          "alive": false,
+          "damage": 278.0,
+          "damage_taken": 400.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 1
+        },
+        {
+          "abilities": [
+            7,
+            1,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 278.0,
+          "damage_taken": 20.8,
+          "hero": "mage",
+          "hp": 179.2,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 18,
+      "seconds": 43.3,
+      "seed": 2408,
+      "winner": 1
+    },
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 148.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            8,
+            1,
+            3,
+            0
+          ],
+          "alive": true,
+          "damage": 326.9,
+          "damage_taken": 104.0,
+          "hero": "mage",
+          "hp": 96.0,
+          "human": false,
+          "kills": 1,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            7,
+            3,
+            3,
+            0
+          ],
+          "alive": false,
+          "damage": 392.6,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 2,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            4,
+            3,
+            2,
+            0
+          ],
+          "alive": false,
+          "damage": 220.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 81.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            8,
+            0,
+            3,
+            2
+          ],
+          "alive": false,
+          "damage": 272.5,
+          "damage_taken": 327.5,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 19,
+      "seconds": 50.7,
+      "seed": 2409,
+      "winner": 0
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "alive": false,
+          "damage": 185.3,
+          "damage_taken": 335.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            7,
+            2,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 290.0,
+          "damage_taken": 164.5,
+          "hero": "mage",
+          "hp": 35.5,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            7,
+            1,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 328.3,
+          "damage_taken": 150.3,
+          "hero": "mage",
+          "hp": 49.7,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 150.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 65.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            7,
+            2,
+            2,
+            1
+          ],
+          "alive": false,
+          "damage": 434.3,
+          "damage_taken": 263.7,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 20,
+      "seconds": 46.3,
+      "seed": 2409,
+      "winner": 0
+    },
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 126.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 172.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            8,
+            2,
+            3,
+            0
+          ],
+          "alive": false,
+          "damage": 375.4,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            3,
+            1,
+            1
+          ],
+          "alive": false,
+          "damage": 201.0,
+          "damage_taken": 335.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 159.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            8,
+            1,
+            3,
+            0
+          ],
+          "alive": true,
+          "damage": 379.5,
+          "damage_taken": 68.4,
+          "hero": "mage",
+          "hp": 131.6,
+          "human": false,
+          "kills": 2,
+          "runes": 1,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 21,
+      "seconds": 50.7,
+      "seed": 2410,
+      "winner": 1
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 126.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 172.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            10,
+            2,
+            3,
+            0
+          ],
+          "alive": true,
+          "damage": 572.0,
+          "damage_taken": 187.5,
+          "hero": "mage",
+          "hp": 12.5,
+          "human": false,
+          "kills": 3,
+          "runes": 3,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            3,
+            1,
+            1
+          ],
+          "alive": false,
+          "damage": 201.0,
+          "damage_taken": 335.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 159.5,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            10,
+            2,
+            3,
+            1
+          ],
+          "alive": false,
+          "damage": 367.1,
+          "damage_taken": 265.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 22,
+      "seconds": 61.7,
+      "seed": 2410,
+      "winner": 0
+    },
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            2,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 132.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            8,
+            0,
+            2,
+            1
+          ],
+          "alive": true,
+          "damage": 320.5,
+          "damage_taken": 174.5,
+          "hero": "mage",
+          "hp": 90.5,
+          "human": false,
+          "kills": 2,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            7,
+            0,
+            3,
+            1
+          ],
+          "alive": true,
+          "damage": 287.5,
+          "damage_taken": 168.5,
+          "hero": "mage",
+          "hp": 96.5,
+          "human": false,
+          "kills": 1,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 94.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 86.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            8,
+            1,
+            2,
+            0
+          ],
+          "alive": false,
+          "damage": 433.0,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 23,
+      "seconds": 47.4,
+      "seed": 2411,
+      "winner": 0
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            2,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 132.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            12,
+            0,
+            4,
+            1
+          ],
+          "alive": true,
+          "damage": 352.9,
+          "damage_taken": 161.0,
+          "hero": "mage",
+          "hp": 104.0,
+          "human": false,
+          "kills": 3,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            11,
+            0,
+            4,
+            1
+          ],
+          "alive": true,
+          "damage": 255.1,
+          "damage_taken": 149.5,
+          "hero": "mage",
+          "hp": 115.5,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 94.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 86.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            12,
+            1,
+            4,
+            0
+          ],
+          "alive": false,
+          "damage": 400.5,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 3,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 24,
+      "seconds": 72.9,
+      "seed": 2411,
+      "winner": 0
+    },
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            2,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 220.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            2,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 168.7,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            11,
+            0,
+            4,
+            1
+          ],
+          "alive": false,
+          "damage": 398.0,
+          "damage_taken": 265.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 3,
+          "team": 0
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 120.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 116.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            12,
+            1,
+            4,
+            1
+          ],
+          "alive": true,
+          "damage": 569.0,
+          "damage_taken": 246.7,
+          "hero": "mage",
+          "hp": 18.3,
+          "human": false,
+          "kills": 3,
+          "runes": 3,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 25,
+      "seconds": 79.3,
+      "seed": 2412,
+      "winner": 1
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 252.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "alive": false,
+          "damage": 270.7,
+          "damage_taken": 335.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            7,
+            1,
+            3,
+            0
+          ],
+          "alive": true,
+          "damage": 217.3,
+          "damage_taken": 64.5,
+          "hero": "mage",
+          "hp": 135.5,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 120.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 116.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            8,
+            3,
+            3,
+            0
+          ],
+          "alive": false,
+          "damage": 433.5,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 2,
+          "runes": 1,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 26,
+      "seconds": 53.5,
+      "seed": 2412,
+      "winner": 0
+    },
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 172.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            5,
+            1,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 350.4,
+          "damage_taken": 89.0,
+          "hero": "mage",
+          "hp": 111.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            4,
+            1,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 347.6,
+          "damage_taken": 125.5,
+          "hero": "mage",
+          "hp": 74.5,
+          "human": false,
+          "kills": 2,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 94.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "alive": false,
+          "damage": 110.0,
+          "damage_taken": 335.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 1
+        },
+        {
+          "abilities": [
+            5,
+            0,
+            2,
+            1
+          ],
+          "alive": false,
+          "damage": 280.5,
+          "damage_taken": 265.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 27,
+      "seconds": 29.4,
+      "seed": 2413,
+      "winner": 0
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 172.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            6,
+            1,
+            2,
+            0
+          ],
+          "alive": false,
+          "damage": 337.2,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            6,
+            1,
+            2,
+            1
+          ],
+          "alive": true,
+          "damage": 294.3,
+          "damage_taken": 190.0,
+          "hero": "mage",
+          "hp": 75.0,
+          "human": false,
+          "kills": 2,
+          "runes": 2,
+          "team": 0
+        },
+        {
+          "abilities": [
+            2,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 94.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 110.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            7,
+            0,
+            2,
+            1
+          ],
+          "alive": false,
+          "damage": 456.0,
+          "damage_taken": 263.5,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 2,
+          "runes": 1,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 28,
+      "seconds": 44.0,
+      "seed": 2413,
+      "winner": 0
+    },
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 132.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 148.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            4,
+            2,
+            2,
+            0
+          ],
+          "alive": false,
+          "damage": 340.6,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 210.9,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 1
+        },
+        {
+          "abilities": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "alive": true,
+          "damage": 298.0,
+          "damage_taken": 321.1,
+          "hero": "warrior",
+          "hp": 13.9,
+          "human": false,
+          "kills": 0,
+          "runes": 1,
+          "team": 1
+        },
+        {
+          "abilities": [
+            4,
+            1,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 231.1,
+          "damage_taken": 29.5,
+          "hero": "mage",
+          "hp": 170.5,
+          "human": false,
+          "kills": 2,
+          "runes": 1,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 29,
+      "seconds": 27.8,
+      "seed": 2414,
+      "winner": 1
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 132.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 148.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            4,
+            2,
+            2,
+            0
+          ],
+          "alive": false,
+          "damage": 290.2,
+          "damage_taken": 200.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            4,
+            3,
+            2,
+            0
+          ],
+          "alive": false,
+          "damage": 248.9,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "alive": true,
+          "damage": 295.3,
+          "damage_taken": 234.2,
+          "hero": "warrior",
+          "hp": 100.8,
+          "human": false,
+          "kills": 0,
+          "runes": 2,
+          "team": 1
+        },
+        {
+          "abilities": [
+            4,
+            0,
+            2,
+            1
+          ],
+          "alive": true,
+          "damage": 195.8,
+          "damage_taken": 66.0,
+          "hero": "mage",
+          "hp": 199.0,
+          "human": false,
+          "kills": 2,
+          "runes": 1,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "warrior",
+      "reason": "Eliminação",
+      "round": 30,
+      "seconds": 26.8,
+      "seed": 2414,
+      "winner": 1
+    },
+    {
+      "mirrored": false,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 148.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            9,
+            1,
+            3,
+            1
+          ],
+          "alive": true,
+          "damage": 360.7,
+          "damage_taken": 160.2,
+          "hero": "mage",
+          "hp": 104.8,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            8,
+            1,
+            3,
+            0
+          ],
+          "alive": true,
+          "damage": 292.3,
+          "damage_taken": 82.2,
+          "hero": "mage",
+          "hp": 117.8,
+          "human": false,
+          "kills": 2,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 96.2,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 102.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            8,
+            1,
+            3,
+            1
+          ],
+          "alive": false,
+          "damage": 314.2,
+          "damage_taken": 261.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 3,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 31,
+      "seconds": 53.3,
+      "seed": 2415,
+      "winner": 0
+    },
+    {
+      "mirrored": true,
+      "participants": [
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 148.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            6,
+            2,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 363.3,
+          "damage_taken": 110.0,
+          "hero": "mage",
+          "hp": 90.0,
+          "human": false,
+          "kills": 1,
+          "runes": 1,
+          "team": 0
+        },
+        {
+          "abilities": [
+            5,
+            1,
+            2,
+            0
+          ],
+          "alive": true,
+          "damage": 293.7,
+          "damage_taken": 60.0,
+          "hero": "mage",
+          "hp": 140.0,
+          "human": false,
+          "kills": 2,
+          "runes": 0,
+          "team": 0
+        },
+        {
+          "abilities": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 96.2,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 1,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "alive": false,
+          "damage": 102.0,
+          "damage_taken": 270.0,
+          "hero": "warrior",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 0,
+          "team": 1
+        },
+        {
+          "abilities": [
+            5,
+            2,
+            2,
+            1
+          ],
+          "alive": false,
+          "damage": 241.8,
+          "damage_taken": 265.0,
+          "hero": "mage",
+          "hp": 0.0,
+          "human": false,
+          "kills": 0,
+          "runes": 2,
+          "team": 1
+        }
+      ],
+      "player_slot_hero": "mage",
+      "reason": "Eliminação",
+      "round": 32,
+      "seconds": 35.1,
+      "seed": 2415,
+      "winner": 0
+    }
+  ],
+  "note": "32 deterministic bot-only matches, 16 mirrored pairs; exploratory, not proof of human balance."
+}

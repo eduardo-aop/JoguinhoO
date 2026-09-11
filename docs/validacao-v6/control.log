@@ -1,0 +1,28 @@
+ERROR: Failed to open 'user://logs/godot2026-09-11T09.31.41.log'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Failed to open log file for writing: user://logs/godot.log
+   at: rotate_file (core/io/logger.cpp:169)
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS save preferences
+PASS preferences survive a new settings instance
+PASS out-of-range preferences clamped
+PASS invalid preference type preserves last usable value
+PASS missing preferences file handled
+PASS selection displays current hero preview
+PASS hero portrait stops rendering during gameplay
+PASS diagonal and straight acceleration match
+PASS aim passes through ally to enemy
+PASS wall still blocks aim
+PASS pause releases movement action
+PASS muting in pause affects the bus of all existing voices
+PASS volume change unmutes and adjusts existing audio while paused
+PASS resume does not resurrect held movement
+PASS skill bar shows half cooldown
+PASS prepared ability has distinct visual state
+PASS rune spawn warning is active before restart
+PASS restart clears previous rune warning during countdown
+PASS clearing a countdown cannot reactivate an empty round
+CONTROL_COMPLETE checks=19 failures=0

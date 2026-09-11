@@ -1,0 +1,37 @@
+{
+  "abilities": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "aim": "(3.85, 1.2, 5.95307)",
+  "alive": true,
+  "attacks": 1,
+  "camera_rotation": [
+    -1.04719758033752,
+    0.0,
+    0.0
+  ],
+  "cursor": "(616.5, 1206.0)",
+  "cursor_mode": 1,
+  "distance": 0.0,
+  "facing": -1.55860722064972,
+  "initial": [
+    0.0,
+    0.0,
+    6.0
+  ],
+  "paused": false,
+  "position": [
+    0.0,
+    0.0,
+    6.0
+  ],
+  "velocity": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "viewport": "(1440.0, 900.0)"
+}

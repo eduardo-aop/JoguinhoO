@@ -1,0 +1,16 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 89.4 - Compatibility - Using Device: Apple - Apple M4
+
+SOAK_ROUND 1 cleanup=true nodes=182.0 memory=45609024.0
+SOAK_ROUND 2 cleanup=true nodes=181.0 memory=45611354.0
+SOAK_ROUND 3 cleanup=true nodes=182.0 memory=45727328.0
+SOAK_ROUND 4 cleanup=true nodes=181.0 memory=45663084.0
+SOAK_ROUND 5 cleanup=true nodes=182.0 memory=45617186.0
+SOAK_ROUND 6 cleanup=true nodes=181.0 memory=45689306.0
+SOAK_ROUND 7 cleanup=true nodes=182.0 memory=45723322.0
+SOAK_ROUND 8 cleanup=true nodes=181.0 memory=45722674.0
+SOAK_ROUND 9 cleanup=true nodes=182.0 memory=45832364.0
+SOAK_ROUND 10 cleanup=true nodes=181.0 memory=45715070.0
+SOAK_ROUND 11 cleanup=true nodes=182.0 memory=45802340.0
+SOAK_ROUND 12 cleanup=true nodes=181.0 memory=45801688.0
+SOAK_COMPLETE rounds=12 passed=true
