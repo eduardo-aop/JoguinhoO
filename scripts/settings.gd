@@ -4,9 +4,10 @@ extends Resource
 signal effects_volume_changed(value: float)
 
 # Camera and input preferences; hero statistics are defined in RiftRules.
-@export var camera_distance: float = 22.0
+@export var camera_distance: float = 6.5
 
-@export var camera_follow_speed: float = 9.0
+@export var camera_follow_speed: float = 14.0
+@export var mouse_sensitivity: float = .0024
 @export var effects_volume: float = 0.65:
 	set(value):
 		if not is_finite(value): return
@@ -16,10 +17,11 @@ signal effects_volume_changed(value: float)
 @export var stopping_rate: float = 90.0
 @export var input_buffer_window: float = 0.12
 
-const PREFERENCES_PATH := "user://tactical-preferences.cfg"
+const PREFERENCES_PATH := "user://survival-preferences.cfg"
 const PREFERENCE_LIMITS := {
 	"camera_follow_speed": Vector2(4.0,16.0),
-	"camera_distance": Vector2(16.0,30.0),
+	"camera_distance": Vector2(3.5,8.0),
+	"mouse_sensitivity": Vector2(.0008,.004),
 	"effects_volume": Vector2(0.0,1.0),
 }
 

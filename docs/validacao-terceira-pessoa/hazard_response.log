@@ -1,0 +1,21 @@
+ERROR: Failed to open 'user://logs/godot2026-09-11T13.56.50.log'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Failed to open log file for writing: user://logs/godot.log
+   at: rotate_file (core/io/logger.cpp:169)
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Condition "ret != noErr" is true. Returning: ""
+   at: get_system_ca_certificates (platform/macos/os_macos.mm:1035)
+PASS bot exits hostile field outward
+PASS bot ignores friendly field
+PASS bot sidesteps incoming projectile
+PASS bot ignores projectile traveling away
+PASS bot ignores friendly projectile
+PASS bot ignores projectile missing its path
+PASS blink reads movement on key press without waiting for physics
+PASS bot physically sidesteps a real projectile without damage
+PASS moving practice targets stay in their lane
+PASS disabling target movement stops immediately
+PASS practice motion can be changed from pause
+PASS practice controls stay out of live arena pause
+HAZARD_RESPONSE_COMPLETE checks=12 failures=0

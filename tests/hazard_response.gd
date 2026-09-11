@@ -39,6 +39,8 @@ func run() -> void:
 	shot.owner_fighter = game.player
 	shot.position.x = 3
 	check(bot.bot.hazard_escape().is_zero_approx(),"bot ignores projectile missing its path")
+	game.rig.yaw = 0
+	game.rig.snap_to_actor()
 	Input.action_press("move_right")
 	var p := game.player
 	var initial := p.position

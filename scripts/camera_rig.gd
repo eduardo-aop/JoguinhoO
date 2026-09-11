@@ -4,95 +4,100 @@ extends Node3D
 var settings: TrainingSettings
 var actor: CharacterBody3D
 var camera: Camera3D
-var pitch: float = -PI / 3.0
+var pitch: float = -.28
+var yaw := 0.0
 var model_visible := true
 var cursor_position := Vector2.ZERO
+var current_distance := 6.0
+var collision_shape := SphereShape3D.new()
 
 func _ready() -> void:
 	camera = Camera3D.new()
-	camera.name = "TacticalCamera"
-	camera.projection = Camera3D.PROJECTION_ORTHOGONAL
-	camera.size = settings.camera_distance
-	camera.near = 0.1
+	camera.name = "SurvivalCamera"
+	camera.fov = 68
+	camera.near = .08
 	camera.far = 150
 	add_child(camera)
-	camera.position = Vector3(0,24,14)
-	camera.rotation.x = pitch
+	collision_shape.radius = .25
+	current_distance = settings.camera_distance
+	camera.position.z = current_distance
 	camera.current = true
-	cursor_position = get_viewport().get_visible_rect().size*.5
+	yaw = actor.rotation.y
 	snap_to_actor()
 
 func _input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion or event is InputEventMouseButton:
-		cursor_position = event.position.clamp(Vector2.ZERO,get_viewport().get_visible_rect().size)
+	if get_tree().paused or Input.mouse_mode != Input.MOUSE_MODE_CAPTURED: return
+	if event is InputEventMouseMotion:
+		look(event.screen_relative)
+
+func look(delta: Vector2) -> void:
+	yaw = wrapf(yaw-delta.x*settings.mouse_sensitivity,-PI,PI)
+	pitch = clampf(pitch-delta.y*settings.mouse_sensitivity,-1.05,.45)
+	rotation = Vector3(pitch,yaw,0)
+	update_collision(0)
+
+func aim_toward(point: Vector3) -> void:
+	var offset := point-global_position
+	yaw = atan2(-offset.x,-offset.z)
+	pitch = clampf(atan2(offset.y,Vector2(offset.x,offset.z).length()),-1.05,.45)
+	rotation = Vector3(pitch,yaw,0)
+	update_collision(0)
 
 func snap_to_actor() -> void:
-	if is_instance_valid(actor):
-		global_position = follow_target()
-
-func aim_offset() -> Vector3:
-	if not actor is RiftFighter or not actor.human or not actor.alive or not actor.arena.active:
-		return Vector3.ZERO
-	# Screen-relative displacement avoids a feedback loop as the camera moves.
-	var center := get_viewport().get_visible_rect().size*.5
-	var offset := ground_at(cursor_position)-ground_at(center)
-	offset.y = 0
-	return (offset*.18).limit_length(3.0)
+	if not is_instance_valid(actor): return
+	global_position = follow_target()
+	rotation = Vector3(pitch,yaw,0)
+	cursor_position = get_viewport().get_visible_rect().size*.5
+	update_collision(0)
 
 func follow_target() -> Vector3:
-	var target := actor.global_position + aim_offset()
-	# Keep the view on the arena at map edges, even at different aspect ratios.
-	var viewport_size := get_viewport().get_visible_rect().size
-	var upper := ground_at(Vector2.ZERO)-global_position
-	var lower := ground_at(viewport_size)-global_position
-	var min_x := -24.0-upper.x
-	var max_x := 24.0-lower.x
-	var min_z := -20.0-upper.z
-	var max_z := 20.0-lower.z
-	target.x = clampf(target.x,min_x,max_x) if min_x < max_x else 0.0
-	target.z = clampf(target.z,min_z,max_z) if min_z < max_z else 0.0
-	target.y = 0.0
-	return target
+	return actor.global_position+Vector3.UP*2.65
 
-func _process(dt: float) -> void:
+func _physics_process(dt: float) -> void:
 	if not is_instance_valid(actor): return
 	global_position = global_position.lerp(follow_target(),1.0-exp(-settings.camera_follow_speed*dt))
-	camera.size = lerpf(camera.size,settings.camera_distance,1.0-exp(-10.0*dt))
+	cursor_position = get_viewport().get_visible_rect().size*.5
+	update_collision(dt)
+
+func update_collision(dt: float) -> void:
+	var query := PhysicsShapeQueryParameters3D.new()
+	query.shape = collision_shape
+	query.transform = Transform3D(Basis.IDENTITY,global_position)
+	query.motion = global_basis.z*settings.camera_distance
+	query.collision_mask = 1
+	query.exclude = [actor.get_rid()]
+	var space := get_world_3d().direct_space_state
+	# Following a tight corner can place the smoothed pivot inside cover.
+	if not space.intersect_shape(query,1).is_empty():
+		global_position = follow_target()
+		query.transform.origin = global_position
+	var fractions := space.cast_motion(query)
+	var distance := maxf(.25,settings.camera_distance*fractions[0]-.1)
+	current_distance = distance if distance < current_distance else move_toward(current_distance,distance,5.0*dt)
+	camera.position.z = current_distance
+	if current_distance < .85: model_visible = false
+	elif current_distance > 1.2: model_visible = true
 
 func movement_direction(axis: Vector2) -> Vector3:
-	var right := camera.global_basis.x
-	var back := camera.global_basis.z
-	right.y = 0
-	back.y = 0
-	return (right.normalized()*axis.x+back.normalized()*axis.y).limit_length(1.0)
+	return (Basis(Vector3.UP,yaw)*Vector3(axis.x,0,axis.y)).limit_length(1.0)
 
 func ground_at(screen: Vector2) -> Vector3:
 	var hit = Plane(Vector3.UP,0).intersects_ray(camera.project_ray_origin(screen),camera.project_ray_normal(screen))
-	return hit if hit != null else actor.global_position
+	return hit if hit != null else Vector3.INF
 
 func cursor_ground() -> Vector3:
-	return ground_at(cursor_position)
+	return ground_at(get_viewport().get_visible_rect().size*.5)
 
 func aim_query(max_distance: float = 100.0) -> Dictionary:
-	return aim_at(cursor_position,max_distance)
+	return aim_at(get_viewport().get_visible_rect().size*.5,max_distance)
 
-func aim_at(cursor: Vector2, max_distance: float = 100.0) -> Dictionary:
-	var origin := camera.project_ray_origin(cursor)
-	var destination := origin + camera.project_ray_normal(cursor)*max_distance
+func aim_at(screen: Vector2, max_distance: float = 100.0) -> Dictionary:
+	var origin := camera.project_ray_origin(screen)
+	var destination := origin+camera.project_ray_normal(screen)*max_distance
 	var excluded: Array[RID] = [actor.get_rid()]
 	if actor is RiftFighter:
 		for ally in actor.arena.fighters:
 			if ally != actor and ally.team == actor.team:
 				excluded.append(ally.get_rid())
-	var query := PhysicsRayQueryParameters3D.create(origin,destination,1 | 2,excluded)
-	var hit := get_world_3d().direct_space_state.intersect_ray(query)
-	# Ranged shots intersect the cursor ray at launch height, so the visible
-	# trajectory passes through the marker instead of above it.
-	var point := ground_at(cursor)
-	var height := actor.global_position.y+1.2
-	if actor is RiftFighter and actor.hero == "mage":
-		var at_height = Plane(Vector3.UP,height).intersects_ray(origin,camera.project_ray_normal(cursor))
-		if at_height != null:
-			point = at_height
-	point.y = height
-	return {"position":point,"collider":hit.get("collider")}
+	var hit := get_world_3d().direct_space_state.intersect_ray(PhysicsRayQueryParameters3D.create(origin,destination,3,excluded))
+	return hit if not hit.is_empty() else {"position":destination,"collider":null}

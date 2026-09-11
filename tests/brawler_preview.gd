@@ -11,7 +11,7 @@ func _ready() -> void:
 	game.moving_targets = true
 	game.hud.moving_targets_option.button_pressed = true
 	game.start_round("mage",true,true)
-	game.rig.cursor_position = game.rig.camera.unproject_position(Vector3(1,1.2,-2))
+	game.rig.aim_toward(Vector3(1,1.2,-2))
 	await capture("res://work/brawler-training.png")
 	var preview := InputEventKey.new()
 	preview.physical_keycode = KEY_R

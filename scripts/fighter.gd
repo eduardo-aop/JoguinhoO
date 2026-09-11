@@ -130,7 +130,6 @@ func _unhandled_input(event: InputEvent) -> void:
 	if not arena.active:
 		return
 	if event is InputEventMouseButton and event.pressed:
-		arena.rig.cursor_position = event.position.clamp(Vector2.ZERO,get_viewport().get_visible_rect().size)
 		refresh_cursor_aim()
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			request_basic()
@@ -315,6 +314,8 @@ func ground_target(max_range: float) -> Dictionary:
 	var point := aim_point
 	if human:
 		point = arena.rig.cursor_ground()
+		if not point.is_finite():
+			return {"valid":false,"point":global_position}
 	point.y = 0
 	var offset := point-global_position
 	if offset.length() > max_range:

@@ -158,7 +158,7 @@ func _ready() -> void:
 		recharge.add_theme_stylebox_override("fill",charge_style)
 		content.add_child(recharge)
 		skill_bars.append(recharge)
-	rows.add_child(label("WASD mover   ·   Mouse mirar   ·   Q/E/R/F: usar   ·   Shift + habilidade: prévia   ·   Direito cancela   ·   Esc pausa",13,Color("aec0b5")))
+	rows.add_child(label("WASD mover   ·   Mouse: câmera e mira   ·   Q/E/R/F: usar   ·   Shift + habilidade: prévia   ·   Direito cancela   ·   Esc pausa",13,Color("aec0b5")))
 	reticle = Control.new()
 	root.add_child(reticle)
 	reticle.set_anchors_and_offsets_preset(Control.PRESET_TOP_LEFT)
@@ -184,9 +184,9 @@ func build_menu() -> void:
 	panel.add_theme_stylebox_override("panel",style())
 	overlay.add_child(panel)
 	var list := VBoxContainer.new()
-	list.add_theme_constant_override("separation",13)
+	list.add_theme_constant_override("separation",10)
 	panel.add_child(list)
-	list.add_child(label("R I F T   /   CÂMERA TÁTICA",16,Color("8bcbb4")))
+	list.add_child(label("R I F T   /   TERCEIRA PESSOA",16,Color("8bcbb4")))
 	title = label("Escolha seu personagem",32)
 	list.add_child(title)
 	description = label("Um jogador + cinco bots. Elimine os três rivais.\nSem renascimento. Dispute runas e evite a zona de perigo.",17)
@@ -221,10 +221,21 @@ func build_menu() -> void:
 		preferences_dirty = true
 		preferences_timer.start())
 	list.add_child(sensitivity)
-	list.add_child(label("Campo de visão da arena",13))
+	list.add_child(label("Sensibilidade do mouse",13))
+	var mouse := HSlider.new()
+	mouse.min_value = .8
+	mouse.max_value = 4
+	mouse.step = .1
+	mouse.value = arena.settings.mouse_sensitivity*1000
+	mouse.value_changed.connect(func(value: float):
+		arena.settings.mouse_sensitivity = value/1000
+		preferences_dirty = true
+		preferences_timer.start())
+	list.add_child(mouse)
+	list.add_child(label("Distância da câmera",13))
 	var distance := HSlider.new()
-	distance.min_value = 16
-	distance.max_value = 30
+	distance.min_value = 3.5
+	distance.max_value = 8
 	distance.step = .1
 	distance.value = arena.settings.camera_distance
 	distance.value_changed.connect(func(value: float): arena.settings.camera_distance = value)
@@ -324,7 +335,7 @@ func pause_game() -> void:
 
 func resume_game() -> void:
 	close_menu()
-	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func show_result(reason: String) -> void:
 	title.text = arena.result

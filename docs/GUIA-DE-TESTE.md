@@ -1,14 +1,14 @@
-# Avaliar a câmera tática
+# Avaliar câmera em terceira pessoa
 
-Abra project.godot no Godot 4.7.2 e pressione F5.
+Abra project.godot no Godot 4.7.2 e pressione F5. Entre no treino com guerreiro ou mago.
 
-1. Escolha guerreiro. Mova o mouse em torno dele: apenas o personagem deve girar.
-2. Aponte para a direita e pressione W: deve andar para cima da tela, de lado em relação à mira.
-3. Alterne W e D, solte as teclas e observe a câmera se acomodar suavemente.
-4. Clique uma vez perto de um adversário: deve ocorrer apenas um ataque.
-5. Como mago, aponte para um inimigo e depois para o chão. Disparos devem seguir a direção escolhida sem mergulhar imediatamente no piso.
-6. Segure Shift + R para inspecionar a área e solte para fechar a prévia. Pressione R sem Shift para executar imediatamente; soltar não deve executar outra vez. Teste áreas atrás de coberturas: a falha deve preservar a recarga.
-7. Em Esc, ajuste resposta e campo de visão. Retome e compare. Valores maiores de resposta acompanham mais rapidamente.
-8. Aproxime-se das bordas e observe o enquadramento. Após morrer, Tab alterna o aliado observado.
+1. Mova o mouse: a câmera deve girar horizontal e verticalmente com a mira no centro. O personagem permanece no chão.
+2. Use WASD: W avança no sentido horizontal da câmera, A/D andam de lado.
+3. Aproxime-se das coberturas e gire a câmera: deve recolher antes de atravessar obstáculos e retornar gradualmente.
+4. Clique uma vez: execute um ataque. Q/E/R/F ativam ao pressionar. Espaço usa a mobilidade da classe.
+5. Como mago, pressione R olhando para o chão; a área deve seguir a mira. Mirar no céu ou atrás de cobertura deve preservar a recarga.
+6. Shift + habilidade mostra a prévia sem executar. Soltar fecha a prévia.
+7. Esc libera o mouse e pausa. Ajuste distância, sensibilidade e resposta da câmera, depois retome.
+8. Após morrer em uma partida, Tab troca o aliado acompanhado.
 
-A avaliação humana que falta é comparar conforto, distância de visão e precisão de mira durante alguns minutos de combate. Não há uma nova decisão de regras necessária para testar esta versão.
+A avaliação humana ainda necessária é o conforto do giro, da distância e da suavidade durante o combate.

@@ -173,6 +173,7 @@ func start_round(hero_choice: String = "warrior", skip_countdown: bool = false, 
 				player = f
 	if practice_mode:
 		player.position = Vector3(0,.01,6)
+		player.rotation.y = 0
 		for i in fighters.size():
 			var f := fighters[i]
 			if not f.human:
@@ -188,7 +189,7 @@ func start_round(hero_choice: String = "warrior", skip_countdown: bool = false, 
 	countdown = -1.0 if skip_countdown else 3.0
 	active = skip_countdown
 	hud.close_menu()
-	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _physics_process(dt: float) -> void:
 	if countdown >= 0:
@@ -400,6 +401,7 @@ func cycle_spectator() -> void:
 	if is_instance_valid(old):
 		old.model.show()
 	rig.actor = spectator
+	rig.yaw = spectator.rotation.y
 	rig.snap_to_actor()
 
 func check_winner() -> void:

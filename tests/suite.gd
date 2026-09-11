@@ -27,10 +27,8 @@ func setup(hero: String = "warrior") -> void:
 	enemy.position = Vector3(0,.01,.5)
 	p.aim_point = enemy.position+Vector3.UP*1.2
 	game.rig.snap_to_actor()
-	game.rig.set_process(false)
-	var motion := InputEventMouseMotion.new()
-	motion.position = game.rig.camera.unproject_position(p.aim_point)
-	root.push_input(motion,true)
+	game.rig.aim_toward(p.aim_point)
+	game.rig.set_physics_process(false)
 	await frames(3)
 func unlock() -> void:
 	p.ability_lock = 0
@@ -47,7 +45,7 @@ func run() -> void:
 	check(game.fighters.size() == 6 and game.living_counts() == [3,3],"exactly three fighters per team")
 	check(game.fighters.filter(func(f): return f.human).size() == 1,"one human and five bots")
 	check(game.player.hero == "warrior" and p.hp == 270,"warrior selectable with own stats")
-	check(game.rig.camera.projection == Camera3D.PROJECTION_ORTHOGONAL,"tactical projection enabled")
+	check(game.rig.camera.projection == Camera3D.PROJECTION_PERSPECTIVE,"third person perspective enabled")
 	var old_position := p.position
 	var camera_before := game.rig.camera.global_transform
 	p.rotation.y = 1

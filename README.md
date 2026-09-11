@@ -1,20 +1,21 @@
 # RIFT — Arena 3×3
 
-MVP local 3D de arena, com um jogador e cinco bots. Guerreiro melee e mago ranged, com câmera elevada e independente do personagem.
+MVP local 3D de arena, com um jogador e cinco bots. Guerreiro melee e mago ranged, com câmera de terceira pessoa acima e atrás do personagem.
 
-## Base atual: câmera tática
+## Base atual: terceira pessoa
 
-- Visão ortográfica inclinada em 60°, com campo de visão ajustável entre 16 e 30 unidades.
-- Câmera acompanha suavemente, antecipa até 3 metros na direção da mira e limita o enquadramento às bordas da arena.
-- WASD relativo à tela, independente da direção de ataque. O mouse move um cursor livre e o personagem se orienta para ele.
-- Mira manual sem atração para o centro dos inimigos. A projeção na altura do disparo faz a trajetória passar pelo cursor. Habilidades de área seguem o ponto indicado no chão.
-- Ajustes de resposta da câmera, enquadramento e volume persistidos em preferências próprias da V6.
+- Câmera em perspectiva, acima e atrás do personagem: distância inicial de 6,5 m e ponto de acompanhamento a 2,65 m do chão do personagem.
+- Mouse capturado gira a câmera e orienta ataques pela mira central. WASD segue a direção horizontal da câmera, com deslocamento lateral independente da mira.
+- Esfera de colisão evita atravessar paredes e chão; aproximação imediata diante de obstáculos e recuperação gradual. O modelo desaparece quando a câmera está perto demais.
+- Mira sem atração automática aos inimigos. Projéteis seguem o ponto visto no centro; coberturas entre o corpo e o alvo continuam bloqueando o disparo.
+- Habilidades de área projetam a mira central no chão; mirar no céu não consome recarga.
+- Sensibilidade, distância de 3,5 a 8 m, suavidade e volume ajustáveis no menu, com preferências próprias da câmera em terceira pessoa.
 - Um ataque por clique, dois kits de habilidades, bots, runas e rodadas de eliminação.
 - Bots reconhecem campos hostis e projéteis próximos em rota de colisão, tentando sair ou esquivar com uma cadência de reação de 180–230 ms.
 - Movimento com aceleração e frenagem mais responsivas, guia de alcance/linha de tiro e Espaço como atalho de mobilidade.
 - Treino livre com alvos imóveis ou móveis que restauram a vida, sem zona nem limite de tempo.
 
-Projeto editável com modelos e fontes Blender. Testado no Godot 4.7.2 Compatibility; não inclui aplicativo standalone exportado. Battlerite é a referência de jogabilidade: WASD, mira manual e leitura de ataques para desviar. Arte, personagens e regras são próprios; não é uma reprodução exata.
+Projeto editável com modelos e fontes Blender. Testado no Godot 4.7.2 Compatibility; não inclui aplicativo standalone exportado. Valheim é a referência de enquadramento em terceira pessoa. O combate mantém WASD, mira manual e leitura de ataques para desviar. Arte, personagens e regras são próprios; não é uma reprodução exata.
 
 ## Jogar
 
@@ -29,8 +30,8 @@ No menu, **TREINO LIVRE** permite praticar os dois kits. Ative **Alvos em movime
 
 | Entrada | Ação |
 |---|---|
-| Mouse | Cursor livre para mirar; personagem acompanha a direção |
-| W / S | Move para cima / baixo em relação à tela |
+| Mouse | Gira a câmera; mira central direciona ataques e habilidades |
+| W / S | Avança / recua na direção horizontal da câmera |
 | A / D | Move para esquerda / direita em relação à tela |
 | Clique esquerdo | Um ataque básico por clique; segurar não repete |
 | Q / E / R | Habilidades do personagem ao pressionar |
@@ -91,9 +92,9 @@ Vence quem eliminar os três rivais. Se as duas equipes forem eliminadas na mesm
 
 ## Validação
 
-273 verificações automáticas aprovadas em 14 scripts: combate, controle, câmera, animação, efeitos, bots, telemetria, investida e colisões. Inclui duas partidas completas de seis bots. Os testes de câmera em terceira pessoa foram substituídos por verificações da câmera tática; os resultados históricos da V5 estão em `docs/historico-v5/`.
+269 verificações automáticas aprovadas em 14 scripts: combate, controle, câmera, animação, efeitos, bots, telemetria, investida e colisões. Inclui duas partidas completas de seis bots. As verificações da câmera tática foram substituídas pelas da nova câmera; versões anteriores permanecem no histórico Git.
 
-Na janela nativa, verificados enquadramento, seleção, entrada na rodada, cursor sem captura e um ataque apontando para a direita com câmera imóvel. Movimento sustentado foi verificado via InputMap, sem teste de tecla física mantida pressionada pela ferramenta.
+Inspeção gráfica de enquadramento, seleção, treino, prévia e execução do Campo glacial. Interface verificada em 1280×720 e 1024×768. Movimento sustentado foi verificado via InputMap, sem teste de tecla física mantida pressionada pela ferramenta.
 
 Após importar o projeto no editor:
 
@@ -101,7 +102,7 @@ Após importar o projeto no editor:
 python3 tools/validate.py --godot /caminho/para/Godot --output /caminho/para/logs
 ```
 
-Resultados atuais em `docs/validacao-reacoes/report.json`. Os avisos do ambiente restrito sobre logs locais e certificados do macOS são separados dos erros de script. Capturas em `tests/preview.tscn` são cenários montados de inspeção visual.
+Resultados atuais em `docs/validacao-terceira-pessoa/report.json`. Os avisos do ambiente restrito sobre logs locais e certificados do macOS são separados dos erros de script. Capturas em `tests/preview.tscn` são cenários montados de inspeção visual.
 
 Veja `docs/GUIA-DE-TESTE.md` para avaliar a sensação dos controles e `docs/ARTE-E-FONTES.md` para reconstruir os assets.
 

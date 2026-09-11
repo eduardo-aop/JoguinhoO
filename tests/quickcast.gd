@@ -21,7 +21,7 @@ func run() -> void:
 			game.start_round(hero,true,true)
 			var p := game.player
 			p.set_physics_process(false)
-			game.rig.cursor_position = game.rig.camera.unproject_position(Vector3(0,0,0))
+			game.rig.aim_toward(Vector3(0,0,0))
 			if slot == 3: p.collect_rune(1,1)
 			var code: Key = [KEY_Q,KEY_E,KEY_R,KEY_F][slot]
 			key(p,code,true)
@@ -48,7 +48,7 @@ func run() -> void:
 	game.start_round("mage",true,true)
 	game.player.position = Vector3(8,.01,11)
 	game.rig.snap_to_actor()
-	game.rig.cursor_position = game.rig.camera.unproject_position(Vector3(8,0,2))
+	game.rig.aim_toward(Vector3(8,0,2))
 	await physics_frame
 	key(game.player,KEY_R,true)
 	check(game.player.cooldowns[2] == 0 and game.player.abilities_used[2] == 0,"blocked ground quickcast preserves cooldown")

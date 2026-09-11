@@ -1,0 +1,204 @@
+{
+  "generated_utc": "2026-09-11T16:56:50.659681+00:00",
+  "project": "JoguinhoO",
+  "tests": [
+    {
+      "name": "hazard_response",
+      "checks": 12,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T13.56.50.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "quickcast",
+      "checks": 29,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T13.56.50.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "brawler",
+      "checks": 25,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T13.56.51.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "suite",
+      "checks": 67,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T13.56.51.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "polish",
+      "checks": 20,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T13.56.53.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "control",
+      "checks": 19,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T13.56.54.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "survival_camera",
+      "checks": 18,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T13.56.54.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "input_and_stress",
+      "checks": 26,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T13.56.54.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "attack_timing",
+      "checks": 6,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T13.57.03.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "effects",
+      "checks": 18,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T13.57.03.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "tactics",
+      "checks": 8,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T13.57.03.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "telemetry",
+      "checks": 7,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T13.57.03.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "dash_timing",
+      "checks": 6,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T13.57.03.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    },
+    {
+      "name": "hitbox",
+      "checks": 8,
+      "failures": 0,
+      "exit_code": 0,
+      "script_errors": false,
+      "unexpected_errors": [],
+      "environment_warnings": [
+        "ERROR: Failed to open 'user://logs/godot2026-09-11T13.57.04.log'.",
+        "ERROR: Failed to open log file for writing: user://logs/godot.log",
+        "ERROR: Condition \"ret != noErr\" is true. Returning: \"\""
+      ],
+      "passed": true
+    }
+  ],
+  "checks": 269,
+  "passed": true
+}

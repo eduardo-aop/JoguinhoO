@@ -16,19 +16,19 @@ func key(code: Key,pressed: bool) -> void:
 func run() -> void:
 	var path := "res://tests/.preferences-test.cfg"
 	var settings := TrainingSettings.new()
-	settings.camera_distance = 26.4
+	settings.camera_distance = 6.4
 	settings.effects_volume = .25
 	settings.camera_follow_speed = 12.0
 	check(settings.save_preferences(path) == OK,"save preferences")
 	var restored := TrainingSettings.new()
-	check(restored.load_preferences(path) == OK and is_equal_approx(restored.camera_distance,26.4) and is_equal_approx(restored.effects_volume,.25) and is_equal_approx(restored.camera_follow_speed,12.0),"preferences survive a new settings instance")
+	check(restored.load_preferences(path) == OK and is_equal_approx(restored.camera_distance,6.4) and is_equal_approx(restored.effects_volume,.25) and is_equal_approx(restored.camera_follow_speed,12.0),"preferences survive a new settings instance")
 	var config := ConfigFile.new()
 	config.set_value("preferences","camera_distance",-10)
 	config.set_value("preferences","effects_volume",4)
 	config.set_value("preferences","camera_follow_speed","invalid")
 	config.save(path)
 	restored.load_preferences(path)
-	check(restored.camera_distance == 16.0 and restored.effects_volume == 1,"out-of-range preferences clamped")
+	check(restored.camera_distance == 3.5 and restored.effects_volume == 1,"out-of-range preferences clamped")
 	check(is_equal_approx(restored.camera_follow_speed,12.0),"invalid preference type preserves last usable value")
 	DirAccess.remove_absolute(ProjectSettings.globalize_path(path))
 	check(restored.load_preferences(path) == ERR_FILE_NOT_FOUND,"missing preferences file handled")
@@ -56,6 +56,7 @@ func run() -> void:
 	key(KEY_D,false)
 	key(KEY_W,false)
 	p.velocity = Vector3.ZERO
+	game.rig.pitch = 0
 	game.rig.snap_to_actor()
 	game.rig.set_process(false)
 	var camera: Camera3D = game.rig.camera

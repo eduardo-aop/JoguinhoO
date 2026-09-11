@@ -33,7 +33,7 @@ func _ready() -> void:
 	arena.player.collect_rune(0,1)
 	arena.player.collect_rune(1,1)
 	arena.spawn_runes()
-	arena.rig.cursor_position = arena.rig.camera.unproject_position(Vector3(0,0,-2))
+	arena.rig.aim_toward(Vector3(0,0,-2))
 	arena.player.aim_point = Vector3(0,0,-2)
 	arena.player.preparing = 2
 	arena.player.update_indicator()
